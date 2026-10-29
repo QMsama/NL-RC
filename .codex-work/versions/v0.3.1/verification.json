@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "scenario": "water_2024_point21",
+  "dates": 115,
+  "periods": [
+    [
+      "01_basal",
+      "基肥后管理期",
+      "2024-06-01",
+      "2024-06-17"
+    ],
+    [
+      "02_tillering",
+      "分蘖肥后管理期",
+      "2024-06-18",
+      "2024-07-05"
+    ],
+    [
+      "03_topdress_to_maturity",
+      "追肥后至成熟期",
+      "2024-07-06",
+      "2024-09-23"
+    ]
+  ],
+  "checks": {
+    "RM": {
+      "season_reference_array_identical": true,
+      "pixels": 125036,
+      "written_stage_sum_max_error_kg_ha": 1.0281801223754883e-06,
+      "season_drainage_reference_array_identical": true
+    },
+    "RCC": {
+      "season_reference_array_identical": true,
+      "pixels": 74353,
+      "written_stage_sum_max_error_kg_ha": 9.238719940185547e-07,
+      "season_drainage_reference_array_identical": true
+    }
+  },
+  "run_id": "run_20261029_162855_water_2024_point21_202a2a",
+  "reference_run_id": "run_20261029_140118_water_2024_point21_853fbd",
+  "script_sha256": "bc9b2dff893dfd8c52b3a758016fe0eb4de64b6007881f1fc7f3dd864fb3764b",
+  "files": [
+    {
+      "file": "TN_RM_01_basal_0601_0617_kg_ha.tif",
+      "sha256": "0a012e5a6ef9409cdf5b8c7c7c0224733f9c3e1e68a8132b1e65f4aebf42a34d",
+      "bytes": 317836
+    },
+    {
+      "file": "TN_RM_01_basal_0601_0617_kg_pixel.tif",
+      "sha256": "26e3c49f03d5d37f3378c43484eb199ea26bc932fbfa6f1723906dc3e5edab30",
+      "bytes": 317822
+    },
+    {
+      "file": "TN_RM_02_tillering_0618_0705_kg_ha.tif",
+      "sha256": "00e27eeea045ab491878b7dbd695e361d417f02d63ed9c5a22558eb47cdef7d8",
+      "bytes": 787082
+    },
+    {
+      "file": "TN_RM_02_tillering_0618_0705_kg_pixel.tif",
+      "sha256": "1fbeb7f07f7670ccaf6b1f49e94dc9a900651513dd1acb269ae5c18b5a02e775",
+      "bytes": 788440
+    },
+    {
+      "file": "TN_RM_03_topdress_to_maturity_0706_0923_kg_ha.tif",
+      "sha256": "e4724546971c86feb3cad0a7c61c673675db7c56eee3484f4dd0128f0462968d",
+      "bytes": 772258
+    },
+    {
+      "file": "TN_RM_03_topdress_to_maturity_0706_0923_kg_pixel.tif",
+      "sha256": "fce2322bf441a323b8a68b7a361c17c20dc3b2ddc74a2a0e2d808495b883545c",
+      "bytes": 772410
+    },
+    {
+      "file": "TN_RM_00_season_0601_0923_kg_ha.tif",
+      "sha256": "28064f8f2ff1cb304d72c4f730da0f64b1ca601c0843b9851084e7f9a5fe9c13",
+      "bytes": 784834
+    },
+    {
+      "file": "TN_RM_00_season_0601_0923_kg_pixel.tif",
+      "sha256": "8fd5ea4e1b040e1c005903f2f541277c8011472bd2ac28741a93e251e19e724c",
+      "bytes": 783782
+    },
+    {
+      "file": "TN_RCC_01_basal_0601_0617_kg_ha.tif",
+      "sha256": "f74a14cc11a90a47a02697897cc59675313aa93b6f909be44be6e880571c6fd1",
+      "bytes": 264342
+    },
+    {
+      "file": "TN_RCC_01_basal_0601_0617_kg_pixel.tif",
+      "sha256": "f26db5b6f2d2486363d0eacd7794b49c627781d4a884dbf5f0d9dbbe4d5cd600",
+      "bytes": 264354
+    },
+    {
+      "file": "TN_RCC_02_tillering_0618_0705_kg_ha.tif",
+      "sha256": "c3d6697a3f853b0a4b2d628690c196a44e5ed27cde38a4268749fef6d608bf90",
+      "bytes": 551220
+    },
+    {
+      "file": "TN_RCC_02_tillering_0618_0705_kg_pixel.tif",
+      "sha256": "ee4ffdf5c57141013aff8bd0aa97b0cf9958806a68a663cbd1da7b6cde5eb5c5",
+      "bytes": 551254
+    },
+    {
+      "file": "TN_RCC_03_topdress_to_maturity_0706_0923_kg_ha.tif",
+      "sha256": "0289962f20ba8cce3b8fdf4233fb1b481349cf54e3740b6adea2de719dd334ce",
+      "bytes": 373496
+    },
+    {
+      "file": "TN_RCC_03_topdress_to_maturity_0706_0923_kg_pixel.tif",
+      "sha256": "d54c2e9ac2c14b10b76d780a08b24e783923dc059ad4798532ad05ef36c3bf48",
+      "bytes": 373678
+    },
+    {
+      "file": "TN_RCC_00_season_0601_0923_kg_ha.tif",
+      "sha256": "18acd2cf1cb93c2b27450653f87f402c9f0bf00a2fd18eecb4593af22847b3d1",
+      "bytes": 550822
+    },
+    {
+      "file": "TN_RCC_00_season_0601_0923_kg_pixel.tif",
+      "sha256": "8fcac5a1183bcf5aa1c516bddd03c5368b36b86e8dd36279693281d367fd021c",
+      "bytes": 550684
+    },
+    {
+      "file": "TN_Drain_RM_2024_water_2024_point21.tif",
+      "sha256": "b281a5fca5cee816203584b2e4e98152f69b2bc97fa617887d6e05d41872a3ea",
+      "bytes": 757171
+    },
+    {
+      "file": "TN_Drain_RCC_2024_water_2024_point21.tif",
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "bytes": 539171
+    }
+  ],
+  "output": "${DATA_ROOT}\\模型\\2026.9.3\\面上推广\\2024\\point21_三期累计TN流失",
+  "float32_sum_tolerance": "rtol 3e-7, atol 2e-6 kg/ha",
+  "replay_output": "${DATA_ROOT}\\.codex-work\\nl_rc_2024\\stage_export_replay",
+  "delivery_replay_all_18_files_byte_identical": true
+}

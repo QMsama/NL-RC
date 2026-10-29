@@ -162,7 +162,7 @@ def check_expected(actual, expected):
     return checks, all(abs(x['difference']) < 1e-6 for rows in checks.values() for x in rows.values())
 
 
-def calculate(argv=None):
+def calculate(argv=None, daily_load_observer=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--c0", choices=["grid", "fixed"], default="grid")
     ap.add_argument("--no-rain-drain", action="store_true", help="两个处理都关闭无雨日退水")
@@ -364,6 +364,9 @@ def calculate(argv=None):
         outlet_rcc_tot += outlet
         rcc_inc = 10.0 * outlet * conc("RCC", d) / A_TOTAL
         load_rcc += rcc_inc
+        if daily_load_observer is not None:
+            # Observers receive copies so exported aggregates cannot alter the simulation.
+            daily_load_observer(d, rm_inc.copy(), rcc_inc.copy())
         ledger.append(dict(
             date=d.isoformat(),
             rm_drain_m3=float(rm_drain_day),
@@ -516,7 +519,7 @@ def project_root():
 
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
-def run(preset='paper_2022',root=None):
+def run(preset='paper_2022',root=None,daily_load_observer=None):
     from osgeo import gdal
     import numpy as np
     root=Path(root) if root else project_root()
@@ -562,7 +565,7 @@ def run(preset='paper_2022',root=None):
     if 'events' in config:
         validate_regional_events(config['events'], dates[0], dates[-1])
         args += ['--event-config', str(config_path)]
-    output=model.calculate(args)
+    output=model.calculate(args,daily_load_observer=daily_load_observer)
     # 日期分组只用于重现既有统计口径，不代表逐像元物候识别。
     with (output/'逐日区域账本.csv').open(encoding='utf-8-sig') as f:ledger=list(csv.DictReader(f))
     groups={k:{'RM_kg':0.,'RCC_kg':0.} for k in ['06月','07月01日至08月15日','08月16日以后']}
