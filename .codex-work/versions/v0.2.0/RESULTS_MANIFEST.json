@@ -1,0 +1,82 @@
+{
+  "version": "v0.2.0-trial",
+  "run_id": "run_20261028_194316_basal_2024_58_18_24_3a93f4",
+  "code_commit": "caff1149b1b6a3da3131256ff7e9bc276686abe2",
+  "files": [
+    {
+      "path": "results/comparison.csv",
+      "bytes": 284,
+      "sha256": "f9e78a6da687465a92c83285d31fd30aa277e70c5311a420f280c06e21ab4011"
+    },
+    {
+      "path": "results/daily_process.png",
+      "bytes": 304195,
+      "sha256": "c8361456ceb4e7de22fc53290673da48fcf6777bdd93277470a22abd57a45349"
+    },
+    {
+      "path": "results/stage_summary.csv",
+      "bytes": 594,
+      "sha256": "f7b5946210c724ab925dd20589f293ffe9fe3283b9e1168813e16483189af195"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 3309,
+      "sha256": "c0b0846b4980b031fed7ad2ce4e7749c0e01cc0958a2355f14dcb14f26e380fe"
+    },
+    {
+      "path": "results/TN_Drain_RCC_2024_basal_2024_58_18_24.tif",
+      "bytes": 539171,
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+    },
+    {
+      "path": "results/TN_Drain_RM_2024_basal_2024_58_18_24.tif",
+      "bytes": 758928,
+      "sha256": "5969dca7f066c039d0e9624c46d4870d3cf6268cde9813790ff68b9524093236"
+    },
+    {
+      "path": "results/TN_Load_RCC_2024_basal_2024_58_18_24.tif",
+      "bytes": 549911,
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+    },
+    {
+      "path": "results/TN_Load_RM_2024_basal_2024_58_18_24.tif",
+      "bytes": 783439,
+      "sha256": "d8808c3e287639081eea1bb60b08059e3387472f5711a8b13065d45b6da24da6"
+    },
+    {
+      "path": "results/TN_TotalMass_RCC_2024_basal_2024_58_18_24.tif",
+      "bytes": 549760,
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+    },
+    {
+      "path": "results/TN_TotalMass_RM_2024_basal_2024_58_18_24.tif",
+      "bytes": 783713,
+      "sha256": "d63925c2971e4628e572d1ada34f9f2c0e7c7216fc2afe5e5756df7ff4269698"
+    },
+    {
+      "path": "results/verification.json",
+      "bytes": 1390,
+      "sha256": "677a889240c2d53471cba569332f56b0091d8b6b091590e38422f75961806481"
+    },
+    {
+      "path": "results/日期分段负荷.csv",
+      "bytes": 324,
+      "sha256": "1438d65f0e3b226430475e9f74b5c387c66f01317bc658b4b2cfd7a1eb452030"
+    },
+    {
+      "path": "results/试算报告.md",
+      "bytes": 3274,
+      "sha256": "431ae3a570560889ad035fe0e47b717ccdd6681e537aa80d8353e48f7f497ea2"
+    },
+    {
+      "path": "results/运行清单.json",
+      "bytes": 63617,
+      "sha256": "5b6cfb839252c1ce3a7f48888bb11e5f3be8dd744c2dbbcf16212908a9785325"
+    },
+    {
+      "path": "results/逐日区域账本.csv",
+      "bytes": 17304,
+      "sha256": "b556e1f9afcb41b3f82fee43842724cc3a1533cc3ef3d94fed13d670de2fc020"
+    }
+  ]
+}
