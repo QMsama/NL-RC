@@ -101,3 +101,17 @@ def regional_ditch_step(volume, rain, loss, field_drain, is_rcc,
         outlet = np.maximum(0.0, water-maximum_volume)
         water = np.minimum(water, maximum_volume)
     return water, np.where(is_rcc, outlet, 0.0)
+
+
+def rm_transfer_thresholds(day, original, last_august_day):
+    """Transfer the August point calibration schedule to a regional scenario."""
+    if last_august_day not in (21, 24):
+        raise ValueError('Last irrigation date must be August 21 or 24')
+    lower, target, capacity, drying = original
+    if (8, 1) <= (day.month, day.day) <= (8, 10):
+        lower, target, capacity = 80.0, 90.0, 100.0
+    if (day.month, day.day) == (8, last_august_day):
+        lower = target
+    elif (day.month, day.day) > (8, last_august_day):
+        lower = 0.0
+    return lower, target, capacity, drying

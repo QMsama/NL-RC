@@ -15,7 +15,7 @@ import uuid
 from datetime import date, timedelta
 from pathlib import Path
 
-from water_balance import vol_per_m, manage, regional_ditch_step
+from water_balance import vol_per_m, manage, regional_ditch_step, rm_transfer_thresholds
 from water_quality import (ALPHA, KDECAY, BACKGROUND, FEED_CONC,
                            c0_from_grid, regional_concentration, validate_regional_events)
 from osgeo import gdal, osr
@@ -181,6 +181,7 @@ def calculate(argv=None):
     ap.add_argument("--rcc-events", default="", help="RCC 施肥日，逗号分隔")
     ap.add_argument("--rcc-calendar", action="store_true", help="按图 2-4：RCC 晒田 7/3-7/4，7/5-7/14 用 10/30/100")
     ap.add_argument("--rm-calendar", action="store_true", help="按图 2-4：RM 晒田 7/3-7/4，6/29-7/2 用 30/50/100")
+    ap.add_argument("--rm-water-policy", choices=["baseline", "schedule21", "point21", "point24"], default="baseline")
     ap.add_argument("--event-config", help="Preset JSON containing explicit RM/RCC events")
     ap.add_argument("--cache-file", required=True)
     args = ap.parse_args(argv)
@@ -297,8 +298,16 @@ def calculate(argv=None):
         # --- RM ---
         lo, tg, cap, dry = thresholds[("RM", d.month, d.day)]
         w = np.maximum(0.0, h_rm + P - loss)
+        if args.rm_water_policy != 'baseline':
+            last_day = 24 if args.rm_water_policy == 'point24' else 21
+            lo, tg, cap, dry = rm_transfer_thresholds(d, (lo, tg, cap, dry), last_day)
         rm_cap = max(cap, args.rm_bund) if args.rm_bund > 0 else cap
-        if (args.no_rain_drain or args.rm_no_drain) and (not dry) and tg > 0:
+        if args.rm_water_policy != 'baseline' and (8, 1) <= (d.month, d.day) <= (8, 10):
+            rm_cap = cap
+        if args.rm_water_policy.startswith('point'):
+            rm_cap = cap
+            w, dr, irr = manage(w, P, lo, tg, cap, dry)
+        elif (args.no_rain_drain or args.rm_no_drain) and (not dry) and tg > 0:
             # 对照：无雨日不主动退水，只在雨日超上限时排水
             low = w < lo
             irr = np.where(low, tg - w, 0.0)
@@ -325,8 +334,13 @@ def calculate(argv=None):
         load_rm += rm_inc
         rm_drain_day = (dr / 1000.0 * A_TOTAL).sum()
         rm_drain_mm = dr.copy()
+        rm_irrigation_mean = float(irr[is_rm].mean())
+        rm_irrigation_max = float(irr[is_rm].max())
         rm_closure = previous_rm + P + irr - np.minimum(previous_rm + P, loss) - dr - h_rm
 
+        lo_rm, tg_rm = lo, tg
+        cap_rm = cap if dry or tg == 0 else rm_cap
+        dry_rm = dry
         # --- RCC 田面 ---
         lo, tg, cap, dry = thresholds[("RCC", d.month, d.day)]
         w = np.maximum(0.0, h_rcc + P - loss)
@@ -357,6 +371,12 @@ def calculate(argv=None):
             rcc_out_m3=float(outlet.sum()),
             rcc_load_kg=float((rcc_inc * PIXEL_HA).sum()),
             rm_water_mean_mm=float(h_rm[is_rm].mean()),
+            rm_irrigation_mean_mm=rm_irrigation_mean,
+            rm_irrigation_max_mm=rm_irrigation_max,
+            rm_lower_mm=lo_rm,
+            rm_target_mm=tg_rm,
+            rm_capacity_mm=cap_rm,
+            rm_drying=int(dry_rm),
             rcc_water_mean_mm=float(h_rcc[is_rcc].mean()),
             rm_tn_mean_mg_L=float(conc('RM', d)[is_rm].mean()),
             rcc_tn_mean_mg_L=float(conc('RCC', d)[is_rcc].mean()),
