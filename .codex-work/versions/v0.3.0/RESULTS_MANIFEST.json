@@ -10,262 +10,367 @@
     {
       "path": "results/basal_2024_58_18_24/basal_2024_58_18_24.json",
       "bytes": 1691,
-      "sha256": "30eec5d12b32d3983f709ec76840f42204098bec858077eba8ebc8941e519126"
+      "sha256": "30eec5d12b32d3983f709ec76840f42204098bec858077eba8ebc8941e519126",
+      "git_sha256": "6ee24a4243ffa3e756bd4592874b3f9fd5f82c9b53f438336c71c20b3b51c688",
+      "git_bytes": 1614
     },
     {
       "path": "results/basal_2024_58_18_24/summary.json",
       "bytes": 3347,
-      "sha256": "62229962868d471ac3193f27bca36a4de1088e8aeff0d6babbb391307e053f5d"
+      "sha256": "62229962868d471ac3193f27bca36a4de1088e8aeff0d6babbb391307e053f5d",
+      "git_sha256": "e247d5451c9e6c966122a42876ec162c89a2d6e18ad9dd01d216e3653dddf8a8",
+      "git_bytes": 3223
     },
     {
       "path": "results/basal_2024_58_18_24/TN_Drain_RCC_2024_basal_2024_58_18_24.tif",
       "bytes": 539171,
-      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "git_sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "git_bytes": 539171
     },
     {
       "path": "results/basal_2024_58_18_24/TN_Drain_RM_2024_basal_2024_58_18_24.tif",
       "bytes": 758928,
-      "sha256": "5969dca7f066c039d0e9624c46d4870d3cf6268cde9813790ff68b9524093236"
+      "sha256": "5969dca7f066c039d0e9624c46d4870d3cf6268cde9813790ff68b9524093236",
+      "git_sha256": "5969dca7f066c039d0e9624c46d4870d3cf6268cde9813790ff68b9524093236",
+      "git_bytes": 758928
     },
     {
       "path": "results/basal_2024_58_18_24/TN_Load_RCC_2024_basal_2024_58_18_24.tif",
       "bytes": 549911,
-      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37",
+      "git_sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37",
+      "git_bytes": 549911
     },
     {
       "path": "results/basal_2024_58_18_24/TN_Load_RM_2024_basal_2024_58_18_24.tif",
       "bytes": 783439,
-      "sha256": "d8808c3e287639081eea1bb60b08059e3387472f5711a8b13065d45b6da24da6"
+      "sha256": "d8808c3e287639081eea1bb60b08059e3387472f5711a8b13065d45b6da24da6",
+      "git_sha256": "d8808c3e287639081eea1bb60b08059e3387472f5711a8b13065d45b6da24da6",
+      "git_bytes": 783439
     },
     {
       "path": "results/basal_2024_58_18_24/TN_TotalMass_RCC_2024_basal_2024_58_18_24.tif",
       "bytes": 549760,
-      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780",
+      "git_sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780",
+      "git_bytes": 549760
     },
     {
       "path": "results/basal_2024_58_18_24/TN_TotalMass_RM_2024_basal_2024_58_18_24.tif",
       "bytes": 783713,
-      "sha256": "d63925c2971e4628e572d1ada34f9f2c0e7c7216fc2afe5e5756df7ff4269698"
+      "sha256": "d63925c2971e4628e572d1ada34f9f2c0e7c7216fc2afe5e5756df7ff4269698",
+      "git_sha256": "d63925c2971e4628e572d1ada34f9f2c0e7c7216fc2afe5e5756df7ff4269698",
+      "git_bytes": 783713
     },
     {
       "path": "results/basal_2024_58_18_24/复现核验.json",
       "bytes": 234,
-      "sha256": "1315cae975117552f38951ea390593c35639f0dc51c98aed12509ac66c4af3e9"
+      "sha256": "1315cae975117552f38951ea390593c35639f0dc51c98aed12509ac66c4af3e9",
+      "git_sha256": "8ebba2ed9a0be718fd35ac62927c309489ea038dd507bf06d2873be9d40d90fe",
+      "git_bytes": 228
     },
     {
       "path": "results/basal_2024_58_18_24/日期分段负荷.csv",
       "bytes": 324,
-      "sha256": "1438d65f0e3b226430475e9f74b5c387c66f01317bc658b4b2cfd7a1eb452030"
+      "sha256": "1438d65f0e3b226430475e9f74b5c387c66f01317bc658b4b2cfd7a1eb452030",
+      "git_sha256": "4e863397187f0ac0a8b2f193cbbf053fd7215287421abd4b5761e0c8aecaba20",
+      "git_bytes": 320
     },
     {
       "path": "results/basal_2024_58_18_24/运行清单.json",
       "bytes": 63617,
-      "sha256": "327aec26ab5dda9cd9475f5cfceca4e979b1c08b46a2d74bca4affdcda1b47d0"
+      "sha256": "327aec26ab5dda9cd9475f5cfceca4e979b1c08b46a2d74bca4affdcda1b47d0",
+      "git_sha256": "c08361addd4d891f8315761668ec7ab4a829422ae07c4c042cef9d1bfac1d1a9",
+      "git_bytes": 62225
     },
     {
       "path": "results/basal_2024_58_18_24/逐日区域账本.csv",
       "bytes": 22475,
-      "sha256": "adc5ecc3d06cb891ed4b1b74a3f78a4ae749ecf3a0ef72240ca4c910cea05f07"
+      "sha256": "adc5ecc3d06cb891ed4b1b74a3f78a4ae749ecf3a0ef72240ca4c910cea05f07",
+      "git_sha256": "58a635f85cd0676b045284b841ed0c5fcbee7119bb98e6fb8e6d08ed836ed8a9",
+      "git_bytes": 22359
     },
     {
       "path": "results/comparison.csv",
       "bytes": 986,
-      "sha256": "35b3e4923ae5e91efc7a8540b31b16e4c8292167e6e5a5165d5e78664617766a"
+      "sha256": "35b3e4923ae5e91efc7a8540b31b16e4c8292167e6e5a5165d5e78664617766a",
+      "git_sha256": "d5d8f520e57c0d4319ab7426734b82c2a715a4947d0277dd70019a5e9e83b748",
+      "git_bytes": 981
     },
     {
       "path": "results/monthly_comparison.csv",
       "bytes": 1251,
-      "sha256": "2d00f497c1ab8776a2b288b20116edefdef851cd2c1bb8351a8e2533a46c07a2"
+      "sha256": "2d00f497c1ab8776a2b288b20116edefdef851cd2c1bb8351a8e2533a46c07a2",
+      "git_sha256": "250e78ced5f36316612ceea06e916121c7690034b7d44a84a22b5e54fb37ba85",
+      "git_bytes": 1234
     },
     {
       "path": "results/verification.json",
       "bytes": 1534,
-      "sha256": "c293cfde05c285ff6b5df4d88ece7ba5223c9aacf04e18a71aa59d66edcce023"
+      "sha256": "c293cfde05c285ff6b5df4d88ece7ba5223c9aacf04e18a71aa59d66edcce023",
+      "git_sha256": "3b50997ea21b6791d0e1db5a05cbf752d0e7e0d11e4e48e5c7c30a3fcd49ff46",
+      "git_bytes": 1484
     },
     {
       "path": "results/water_2024_point21/summary.json",
       "bytes": 3343,
-      "sha256": "e967720ccbe39f28e8c67cebeb18653c2bdbe8c114c0aed9dfa696f8677cd6af"
+      "sha256": "e967720ccbe39f28e8c67cebeb18653c2bdbe8c114c0aed9dfa696f8677cd6af",
+      "git_sha256": "b18cec783bf485fe377277d959191892bf9bdffd10430767c1adb4f384f95bf9",
+      "git_bytes": 3219
     },
     {
       "path": "results/water_2024_point21/TN_Drain_RCC_2024_water_2024_point21.tif",
       "bytes": 539171,
-      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "git_sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "git_bytes": 539171
     },
     {
       "path": "results/water_2024_point21/TN_Drain_RM_2024_water_2024_point21.tif",
       "bytes": 757171,
-      "sha256": "b281a5fca5cee816203584b2e4e98152f69b2bc97fa617887d6e05d41872a3ea"
+      "sha256": "b281a5fca5cee816203584b2e4e98152f69b2bc97fa617887d6e05d41872a3ea",
+      "git_sha256": "b281a5fca5cee816203584b2e4e98152f69b2bc97fa617887d6e05d41872a3ea",
+      "git_bytes": 757171
     },
     {
       "path": "results/water_2024_point21/TN_Load_RCC_2024_water_2024_point21.tif",
       "bytes": 549911,
-      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37",
+      "git_sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37",
+      "git_bytes": 549911
     },
     {
       "path": "results/water_2024_point21/TN_Load_RM_2024_water_2024_point21.tif",
       "bytes": 783922,
-      "sha256": "6e8416444f737b7fb01efd89b69e64682d0db27ef392e75db79b8b26ce2bc613"
+      "sha256": "6e8416444f737b7fb01efd89b69e64682d0db27ef392e75db79b8b26ce2bc613",
+      "git_sha256": "6e8416444f737b7fb01efd89b69e64682d0db27ef392e75db79b8b26ce2bc613",
+      "git_bytes": 783922
     },
     {
       "path": "results/water_2024_point21/TN_TotalMass_RCC_2024_water_2024_point21.tif",
       "bytes": 549760,
-      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780",
+      "git_sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780",
+      "git_bytes": 549760
     },
     {
       "path": "results/water_2024_point21/TN_TotalMass_RM_2024_water_2024_point21.tif",
       "bytes": 782859,
-      "sha256": "1f20d927c4ec75287664a3f07e9f5cdfa74f606b4778c47fd7b527a6c4f6906b"
+      "sha256": "1f20d927c4ec75287664a3f07e9f5cdfa74f606b4778c47fd7b527a6c4f6906b",
+      "git_sha256": "1f20d927c4ec75287664a3f07e9f5cdfa74f606b4778c47fd7b527a6c4f6906b",
+      "git_bytes": 782859
     },
     {
       "path": "results/water_2024_point21/water_2024_point21.json",
       "bytes": 1768,
-      "sha256": "8eaab1c71ac1f61470902d486039c7b84a04c5b713d341803c06d7062183e7bb"
+      "sha256": "8eaab1c71ac1f61470902d486039c7b84a04c5b713d341803c06d7062183e7bb",
+      "git_sha256": "87a8b08515356dcf72db7b229f145c3a484d61fdfd2c05558bf9f2104291790e",
+      "git_bytes": 1689
     },
     {
       "path": "results/water_2024_point21/复现核验.json",
       "bytes": 240,
-      "sha256": "a1c8a5b4b83b91a40110934b6983671f0944adbdfba11f62efd10833f6cf21a3"
+      "sha256": "a1c8a5b4b83b91a40110934b6983671f0944adbdfba11f62efd10833f6cf21a3",
+      "git_sha256": "e5a7e35fbb57cbb5f26532fa2e4a39adb6b5c8f196ef98709f3daeb3238af7e9",
+      "git_bytes": 234
     },
     {
       "path": "results/water_2024_point21/日期分段负荷.csv",
       "bytes": 319,
-      "sha256": "1c35aa472af658f532b60437a4356990468a9faa7946b9c685feeb5fa9c62a1f"
+      "sha256": "1c35aa472af658f532b60437a4356990468a9faa7946b9c685feeb5fa9c62a1f",
+      "git_sha256": "2c1acc569ada02641cf9262dd48e06f3ad1f1eebbb2934e28d92c803323227c1",
+      "git_bytes": 315
     },
     {
       "path": "results/water_2024_point21/运行清单.json",
       "bytes": 63698,
-      "sha256": "7b6deab35274602ed3c4baa60359820dc5f7c1d0e319cf0bc6ba0773be2c78be"
+      "sha256": "7b6deab35274602ed3c4baa60359820dc5f7c1d0e319cf0bc6ba0773be2c78be",
+      "git_sha256": "b11c26e63a14b8648d1445a15ff70566bf2091319268df9d7d7b3067fca8b2fd",
+      "git_bytes": 62304
     },
     {
       "path": "results/water_2024_point21/逐日区域账本.csv",
       "bytes": 22648,
-      "sha256": "0167715e9e21c7a5605d28cc92f7ad3ed3d3a14aca6c783c2244757d721d9124"
+      "sha256": "0167715e9e21c7a5605d28cc92f7ad3ed3d3a14aca6c783c2244757d721d9124",
+      "git_sha256": "b10ea66f2d35a3c208540cb4cd2730b7db38963edf022ef21a449416af8f9f5f",
+      "git_bytes": 22532
     },
     {
       "path": "results/water_2024_point24/summary.json",
       "bytes": 3341,
-      "sha256": "0a7816294eee0fdc4e292406e59348fe8f1c1a130d76e041bea8526706dafdb0"
+      "sha256": "0a7816294eee0fdc4e292406e59348fe8f1c1a130d76e041bea8526706dafdb0",
+      "git_sha256": "b7de0bcfaf457136450fbe8d8dd907a566dec2560895b3edbcd3db9f01ab64a2",
+      "git_bytes": 3217
     },
     {
       "path": "results/water_2024_point24/TN_Drain_RCC_2024_water_2024_point24.tif",
       "bytes": 539171,
-      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "git_sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "git_bytes": 539171
     },
     {
       "path": "results/water_2024_point24/TN_Drain_RM_2024_water_2024_point24.tif",
       "bytes": 757171,
-      "sha256": "b37db55cb4b495137b3444d72ec3cd32fc610df0b3a9795048cf81c9d9455f83"
+      "sha256": "b37db55cb4b495137b3444d72ec3cd32fc610df0b3a9795048cf81c9d9455f83",
+      "git_sha256": "b37db55cb4b495137b3444d72ec3cd32fc610df0b3a9795048cf81c9d9455f83",
+      "git_bytes": 757171
     },
     {
       "path": "results/water_2024_point24/TN_Load_RCC_2024_water_2024_point24.tif",
       "bytes": 549911,
-      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37",
+      "git_sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37",
+      "git_bytes": 549911
     },
     {
       "path": "results/water_2024_point24/TN_Load_RM_2024_water_2024_point24.tif",
       "bytes": 783922,
-      "sha256": "57c37cf6f4bb37286171b2325c895929a799252c858d844ba377964355a4ae90"
+      "sha256": "57c37cf6f4bb37286171b2325c895929a799252c858d844ba377964355a4ae90",
+      "git_sha256": "57c37cf6f4bb37286171b2325c895929a799252c858d844ba377964355a4ae90",
+      "git_bytes": 783922
     },
     {
       "path": "results/water_2024_point24/TN_TotalMass_RCC_2024_water_2024_point24.tif",
       "bytes": 549760,
-      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780",
+      "git_sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780",
+      "git_bytes": 549760
     },
     {
       "path": "results/water_2024_point24/TN_TotalMass_RM_2024_water_2024_point24.tif",
       "bytes": 782859,
-      "sha256": "a9db7e8bc54f8ec992a13f20f275e333effa3c47618b9a766ef8aeee8ef0db1e"
+      "sha256": "a9db7e8bc54f8ec992a13f20f275e333effa3c47618b9a766ef8aeee8ef0db1e",
+      "git_sha256": "a9db7e8bc54f8ec992a13f20f275e333effa3c47618b9a766ef8aeee8ef0db1e",
+      "git_bytes": 782859
     },
     {
       "path": "results/water_2024_point24/water_2024_point24.json",
       "bytes": 1768,
-      "sha256": "21293150cd95944c12020796da8c05070923a725afe6d8b855e9e6668e2bd6bf"
+      "sha256": "21293150cd95944c12020796da8c05070923a725afe6d8b855e9e6668e2bd6bf",
+      "git_sha256": "5692991baf6f6c1d089ef82a00ed5375a9c0349ea1da4390b7bd87b3f820ea12",
+      "git_bytes": 1689
     },
     {
       "path": "results/water_2024_point24/复现核验.json",
       "bytes": 240,
-      "sha256": "d20e5d89248621dfad090b2d47ec468eb0dd8b7a3fab2ad48b6ed557229bbf13"
+      "sha256": "d20e5d89248621dfad090b2d47ec468eb0dd8b7a3fab2ad48b6ed557229bbf13",
+      "git_sha256": "9534dfe27cc1dadfcb168826b99b086cb6726f4140dfb316b668222d7d741fb5",
+      "git_bytes": 234
     },
     {
       "path": "results/water_2024_point24/日期分段负荷.csv",
       "bytes": 319,
-      "sha256": "1916e8256efa461c387c1c1370f57308e5bf8998f1597d104d5f012ed33c55e5"
+      "sha256": "1916e8256efa461c387c1c1370f57308e5bf8998f1597d104d5f012ed33c55e5",
+      "git_sha256": "1fc7f2df1c53d940573dc37f1119fd74ab24ab40e98339212382f4045ff97872",
+      "git_bytes": 315
     },
     {
       "path": "results/water_2024_point24/运行清单.json",
       "bytes": 63698,
-      "sha256": "16b56b1daa1855497bcbb6157cbb53eaa87bbd8db352e4b3868dfbee967af664"
+      "sha256": "16b56b1daa1855497bcbb6157cbb53eaa87bbd8db352e4b3868dfbee967af664",
+      "git_sha256": "0bed62d6ae4c972085129b4626e5fa9ab2af494aede60259c92cde15ab273768",
+      "git_bytes": 62304
     },
     {
       "path": "results/water_2024_point24/逐日区域账本.csv",
       "bytes": 22792,
-      "sha256": "e8df2c449571824da54ec18660aac6463f087c14597afa78065cf34250d934b8"
+      "sha256": "e8df2c449571824da54ec18660aac6463f087c14597afa78065cf34250d934b8",
+      "git_sha256": "9754b415be1dcf811c4a4b113d1748ee805941e9e9b4a5ec7a84b71da33c6169",
+      "git_bytes": 22676
     },
     {
       "path": "results/water_2024_schedule21/summary.json",
       "bytes": 3349,
-      "sha256": "261829b321db3fa4a6cd7580dcd3f7891b27300b3d4c4deffbbb1de72f2d6772"
+      "sha256": "261829b321db3fa4a6cd7580dcd3f7891b27300b3d4c4deffbbb1de72f2d6772",
+      "git_sha256": "23134b87b50dc1e55cd90a6a6f903755005dfa7168d3ce6de496e1863b9fc06b",
+      "git_bytes": 3225
     },
     {
       "path": "results/water_2024_schedule21/TN_Drain_RCC_2024_water_2024_schedule21.tif",
       "bytes": 539171,
-      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "git_sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840",
+      "git_bytes": 539171
     },
     {
       "path": "results/water_2024_schedule21/TN_Drain_RM_2024_water_2024_schedule21.tif",
       "bytes": 758986,
-      "sha256": "f0f660bf0c981f493011d9af477c405aaa429800cc07d91723e81e7d41fd3908"
+      "sha256": "f0f660bf0c981f493011d9af477c405aaa429800cc07d91723e81e7d41fd3908",
+      "git_sha256": "f0f660bf0c981f493011d9af477c405aaa429800cc07d91723e81e7d41fd3908",
+      "git_bytes": 758986
     },
     {
       "path": "results/water_2024_schedule21/TN_Load_RCC_2024_water_2024_schedule21.tif",
       "bytes": 549911,
-      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37",
+      "git_sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37",
+      "git_bytes": 549911
     },
     {
       "path": "results/water_2024_schedule21/TN_Load_RM_2024_water_2024_schedule21.tif",
       "bytes": 783426,
-      "sha256": "5b8a42288718bfcf291dfd6c98c70146903bc8db59edcca0b43cb29549e12f74"
+      "sha256": "5b8a42288718bfcf291dfd6c98c70146903bc8db59edcca0b43cb29549e12f74",
+      "git_sha256": "5b8a42288718bfcf291dfd6c98c70146903bc8db59edcca0b43cb29549e12f74",
+      "git_bytes": 783426
     },
     {
       "path": "results/water_2024_schedule21/TN_TotalMass_RCC_2024_water_2024_schedule21.tif",
       "bytes": 549760,
-      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780",
+      "git_sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780",
+      "git_bytes": 549760
     },
     {
       "path": "results/water_2024_schedule21/TN_TotalMass_RM_2024_water_2024_schedule21.tif",
       "bytes": 783716,
-      "sha256": "5fb626f593f407a0164166ad4e39a63d02e98bcabbf2a971e5c70e3fd7c264fe"
+      "sha256": "5fb626f593f407a0164166ad4e39a63d02e98bcabbf2a971e5c70e3fd7c264fe",
+      "git_sha256": "5fb626f593f407a0164166ad4e39a63d02e98bcabbf2a971e5c70e3fd7c264fe",
+      "git_bytes": 783716
     },
     {
       "path": "results/water_2024_schedule21/water_2024_schedule21.json",
       "bytes": 1777,
-      "sha256": "8833df12977d7f82c10516e87bba20131131158d4eddf55d973a79a9806e698b"
+      "sha256": "8833df12977d7f82c10516e87bba20131131158d4eddf55d973a79a9806e698b",
+      "git_sha256": "db245a59801935eeb099f1c9cc230e1aa3eba34d792853064111d64059a26709",
+      "git_bytes": 1698
     },
     {
       "path": "results/water_2024_schedule21/复现核验.json",
       "bytes": 243,
-      "sha256": "dd24c8b34d691549c77fd0b07e9a2c03f9f80edd6b4ff89402119151f724ebaa"
+      "sha256": "dd24c8b34d691549c77fd0b07e9a2c03f9f80edd6b4ff89402119151f724ebaa",
+      "git_sha256": "5dd580a86f23e7a0f2e9c7ea23680634971361f5c929a993766609d2fbf07ebf",
+      "git_bytes": 237
     },
     {
       "path": "results/water_2024_schedule21/日期分段负荷.csv",
       "bytes": 287,
-      "sha256": "88f61ec6782931ebbb600d3514d164da2ddc1d977148ee865834897d5bef6174"
+      "sha256": "88f61ec6782931ebbb600d3514d164da2ddc1d977148ee865834897d5bef6174",
+      "git_sha256": "7441ed13be671fc358cdf5c78bbd3179323df9ce9caa9dbe113c3b57b1437276",
+      "git_bytes": 283
     },
     {
       "path": "results/water_2024_schedule21/运行清单.json",
       "bytes": 63707,
-      "sha256": "648564f8460459600d09be60918896fcdd0b67af3d8bc53058e864120f430e1f"
+      "sha256": "648564f8460459600d09be60918896fcdd0b67af3d8bc53058e864120f430e1f",
+      "git_sha256": "6c1b5a5d5dd5bb770935fa56d54d5b5763384a5c8c40763d80069e12bf44351a",
+      "git_bytes": 62313
     },
     {
       "path": "results/water_2024_schedule21/逐日区域账本.csv",
       "bytes": 22018,
-      "sha256": "5a706ebbc738e5cafa99a51a7fdc2170c61d6705a82ec682bd29b9f53028e787"
+      "sha256": "5a706ebbc738e5cafa99a51a7fdc2170c61d6705a82ec682bd29b9f53028e787",
+      "git_sha256": "622cb5fe8875fc72140562991f20bbe1c1ff92ddfeee49ee273e47aa2a043588",
+      "git_bytes": 21902
     },
     {
       "path": "results/水位规则迁移过程对照.png",
       "bytes": 315093,
-      "sha256": "87b3c15dacf098139a4009da1e0ccecf1701e4ae140baa1a7db77aac4e0c756a"
+      "sha256": "87b3c15dacf098139a4009da1e0ccecf1701e4ae140baa1a7db77aac4e0c756a",
+      "git_sha256": "87b3c15dacf098139a4009da1e0ccecf1701e4ae140baa1a7db77aac4e0c756a",
+      "git_bytes": 315093
     }
-  ]
+  ],
+  "hash_scope": "sha256 and bytes describe local run archive; git_sha256 and git_bytes describe committed repository bytes after Git text normalization"
 }
