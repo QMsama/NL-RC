@@ -1,0 +1,271 @@
+{
+  "code_commit": "f9e738c333fcfd527d66ebd9098a7a39501a8c3a",
+  "runs": {
+    "basal_2024_58_18_24": "run_20261029_140044_basal_2024_58_18_24_1ca6c3",
+    "water_2024_schedule21": "run_20261029_140109_water_2024_schedule21_86d481",
+    "water_2024_point21": "run_20261029_140118_water_2024_point21_853fbd",
+    "water_2024_point24": "run_20261029_140127_water_2024_point24_a42eac"
+  },
+  "files": [
+    {
+      "path": "results/basal_2024_58_18_24/basal_2024_58_18_24.json",
+      "bytes": 1691,
+      "sha256": "30eec5d12b32d3983f709ec76840f42204098bec858077eba8ebc8941e519126"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/summary.json",
+      "bytes": 3347,
+      "sha256": "62229962868d471ac3193f27bca36a4de1088e8aeff0d6babbb391307e053f5d"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/TN_Drain_RCC_2024_basal_2024_58_18_24.tif",
+      "bytes": 539171,
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/TN_Drain_RM_2024_basal_2024_58_18_24.tif",
+      "bytes": 758928,
+      "sha256": "5969dca7f066c039d0e9624c46d4870d3cf6268cde9813790ff68b9524093236"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/TN_Load_RCC_2024_basal_2024_58_18_24.tif",
+      "bytes": 549911,
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/TN_Load_RM_2024_basal_2024_58_18_24.tif",
+      "bytes": 783439,
+      "sha256": "d8808c3e287639081eea1bb60b08059e3387472f5711a8b13065d45b6da24da6"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/TN_TotalMass_RCC_2024_basal_2024_58_18_24.tif",
+      "bytes": 549760,
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/TN_TotalMass_RM_2024_basal_2024_58_18_24.tif",
+      "bytes": 783713,
+      "sha256": "d63925c2971e4628e572d1ada34f9f2c0e7c7216fc2afe5e5756df7ff4269698"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/复现核验.json",
+      "bytes": 234,
+      "sha256": "1315cae975117552f38951ea390593c35639f0dc51c98aed12509ac66c4af3e9"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/日期分段负荷.csv",
+      "bytes": 324,
+      "sha256": "1438d65f0e3b226430475e9f74b5c387c66f01317bc658b4b2cfd7a1eb452030"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/运行清单.json",
+      "bytes": 63617,
+      "sha256": "327aec26ab5dda9cd9475f5cfceca4e979b1c08b46a2d74bca4affdcda1b47d0"
+    },
+    {
+      "path": "results/basal_2024_58_18_24/逐日区域账本.csv",
+      "bytes": 22475,
+      "sha256": "adc5ecc3d06cb891ed4b1b74a3f78a4ae749ecf3a0ef72240ca4c910cea05f07"
+    },
+    {
+      "path": "results/comparison.csv",
+      "bytes": 986,
+      "sha256": "35b3e4923ae5e91efc7a8540b31b16e4c8292167e6e5a5165d5e78664617766a"
+    },
+    {
+      "path": "results/monthly_comparison.csv",
+      "bytes": 1251,
+      "sha256": "2d00f497c1ab8776a2b288b20116edefdef851cd2c1bb8351a8e2533a46c07a2"
+    },
+    {
+      "path": "results/verification.json",
+      "bytes": 1534,
+      "sha256": "c293cfde05c285ff6b5df4d88ece7ba5223c9aacf04e18a71aa59d66edcce023"
+    },
+    {
+      "path": "results/water_2024_point21/summary.json",
+      "bytes": 3343,
+      "sha256": "e967720ccbe39f28e8c67cebeb18653c2bdbe8c114c0aed9dfa696f8677cd6af"
+    },
+    {
+      "path": "results/water_2024_point21/TN_Drain_RCC_2024_water_2024_point21.tif",
+      "bytes": 539171,
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+    },
+    {
+      "path": "results/water_2024_point21/TN_Drain_RM_2024_water_2024_point21.tif",
+      "bytes": 757171,
+      "sha256": "b281a5fca5cee816203584b2e4e98152f69b2bc97fa617887d6e05d41872a3ea"
+    },
+    {
+      "path": "results/water_2024_point21/TN_Load_RCC_2024_water_2024_point21.tif",
+      "bytes": 549911,
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+    },
+    {
+      "path": "results/water_2024_point21/TN_Load_RM_2024_water_2024_point21.tif",
+      "bytes": 783922,
+      "sha256": "6e8416444f737b7fb01efd89b69e64682d0db27ef392e75db79b8b26ce2bc613"
+    },
+    {
+      "path": "results/water_2024_point21/TN_TotalMass_RCC_2024_water_2024_point21.tif",
+      "bytes": 549760,
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+    },
+    {
+      "path": "results/water_2024_point21/TN_TotalMass_RM_2024_water_2024_point21.tif",
+      "bytes": 782859,
+      "sha256": "1f20d927c4ec75287664a3f07e9f5cdfa74f606b4778c47fd7b527a6c4f6906b"
+    },
+    {
+      "path": "results/water_2024_point21/water_2024_point21.json",
+      "bytes": 1768,
+      "sha256": "8eaab1c71ac1f61470902d486039c7b84a04c5b713d341803c06d7062183e7bb"
+    },
+    {
+      "path": "results/water_2024_point21/复现核验.json",
+      "bytes": 240,
+      "sha256": "a1c8a5b4b83b91a40110934b6983671f0944adbdfba11f62efd10833f6cf21a3"
+    },
+    {
+      "path": "results/water_2024_point21/日期分段负荷.csv",
+      "bytes": 319,
+      "sha256": "1c35aa472af658f532b60437a4356990468a9faa7946b9c685feeb5fa9c62a1f"
+    },
+    {
+      "path": "results/water_2024_point21/运行清单.json",
+      "bytes": 63698,
+      "sha256": "7b6deab35274602ed3c4baa60359820dc5f7c1d0e319cf0bc6ba0773be2c78be"
+    },
+    {
+      "path": "results/water_2024_point21/逐日区域账本.csv",
+      "bytes": 22648,
+      "sha256": "0167715e9e21c7a5605d28cc92f7ad3ed3d3a14aca6c783c2244757d721d9124"
+    },
+    {
+      "path": "results/water_2024_point24/summary.json",
+      "bytes": 3341,
+      "sha256": "0a7816294eee0fdc4e292406e59348fe8f1c1a130d76e041bea8526706dafdb0"
+    },
+    {
+      "path": "results/water_2024_point24/TN_Drain_RCC_2024_water_2024_point24.tif",
+      "bytes": 539171,
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+    },
+    {
+      "path": "results/water_2024_point24/TN_Drain_RM_2024_water_2024_point24.tif",
+      "bytes": 757171,
+      "sha256": "b37db55cb4b495137b3444d72ec3cd32fc610df0b3a9795048cf81c9d9455f83"
+    },
+    {
+      "path": "results/water_2024_point24/TN_Load_RCC_2024_water_2024_point24.tif",
+      "bytes": 549911,
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+    },
+    {
+      "path": "results/water_2024_point24/TN_Load_RM_2024_water_2024_point24.tif",
+      "bytes": 783922,
+      "sha256": "57c37cf6f4bb37286171b2325c895929a799252c858d844ba377964355a4ae90"
+    },
+    {
+      "path": "results/water_2024_point24/TN_TotalMass_RCC_2024_water_2024_point24.tif",
+      "bytes": 549760,
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+    },
+    {
+      "path": "results/water_2024_point24/TN_TotalMass_RM_2024_water_2024_point24.tif",
+      "bytes": 782859,
+      "sha256": "a9db7e8bc54f8ec992a13f20f275e333effa3c47618b9a766ef8aeee8ef0db1e"
+    },
+    {
+      "path": "results/water_2024_point24/water_2024_point24.json",
+      "bytes": 1768,
+      "sha256": "21293150cd95944c12020796da8c05070923a725afe6d8b855e9e6668e2bd6bf"
+    },
+    {
+      "path": "results/water_2024_point24/复现核验.json",
+      "bytes": 240,
+      "sha256": "d20e5d89248621dfad090b2d47ec468eb0dd8b7a3fab2ad48b6ed557229bbf13"
+    },
+    {
+      "path": "results/water_2024_point24/日期分段负荷.csv",
+      "bytes": 319,
+      "sha256": "1916e8256efa461c387c1c1370f57308e5bf8998f1597d104d5f012ed33c55e5"
+    },
+    {
+      "path": "results/water_2024_point24/运行清单.json",
+      "bytes": 63698,
+      "sha256": "16b56b1daa1855497bcbb6157cbb53eaa87bbd8db352e4b3868dfbee967af664"
+    },
+    {
+      "path": "results/water_2024_point24/逐日区域账本.csv",
+      "bytes": 22792,
+      "sha256": "e8df2c449571824da54ec18660aac6463f087c14597afa78065cf34250d934b8"
+    },
+    {
+      "path": "results/water_2024_schedule21/summary.json",
+      "bytes": 3349,
+      "sha256": "261829b321db3fa4a6cd7580dcd3f7891b27300b3d4c4deffbbb1de72f2d6772"
+    },
+    {
+      "path": "results/water_2024_schedule21/TN_Drain_RCC_2024_water_2024_schedule21.tif",
+      "bytes": 539171,
+      "sha256": "9761500a2cc891178167816566b5e2f3cbd3bcc196008d7b3f2967b0d9cda840"
+    },
+    {
+      "path": "results/water_2024_schedule21/TN_Drain_RM_2024_water_2024_schedule21.tif",
+      "bytes": 758986,
+      "sha256": "f0f660bf0c981f493011d9af477c405aaa429800cc07d91723e81e7d41fd3908"
+    },
+    {
+      "path": "results/water_2024_schedule21/TN_Load_RCC_2024_water_2024_schedule21.tif",
+      "bytes": 549911,
+      "sha256": "89e10dcfc52eca9bd63ee2a2e27340e85f7225388d3542181bcd80975b1ebc37"
+    },
+    {
+      "path": "results/water_2024_schedule21/TN_Load_RM_2024_water_2024_schedule21.tif",
+      "bytes": 783426,
+      "sha256": "5b8a42288718bfcf291dfd6c98c70146903bc8db59edcca0b43cb29549e12f74"
+    },
+    {
+      "path": "results/water_2024_schedule21/TN_TotalMass_RCC_2024_water_2024_schedule21.tif",
+      "bytes": 549760,
+      "sha256": "c6dcb2df5e1a34666ef61b0db83e2a2bceea919d0806362c08ec4e2742ea0780"
+    },
+    {
+      "path": "results/water_2024_schedule21/TN_TotalMass_RM_2024_water_2024_schedule21.tif",
+      "bytes": 783716,
+      "sha256": "5fb626f593f407a0164166ad4e39a63d02e98bcabbf2a971e5c70e3fd7c264fe"
+    },
+    {
+      "path": "results/water_2024_schedule21/water_2024_schedule21.json",
+      "bytes": 1777,
+      "sha256": "8833df12977d7f82c10516e87bba20131131158d4eddf55d973a79a9806e698b"
+    },
+    {
+      "path": "results/water_2024_schedule21/复现核验.json",
+      "bytes": 243,
+      "sha256": "dd24c8b34d691549c77fd0b07e9a2c03f9f80edd6b4ff89402119151f724ebaa"
+    },
+    {
+      "path": "results/water_2024_schedule21/日期分段负荷.csv",
+      "bytes": 287,
+      "sha256": "88f61ec6782931ebbb600d3514d164da2ddc1d977148ee865834897d5bef6174"
+    },
+    {
+      "path": "results/water_2024_schedule21/运行清单.json",
+      "bytes": 63707,
+      "sha256": "648564f8460459600d09be60918896fcdd0b67af3d8bc53058e864120f430e1f"
+    },
+    {
+      "path": "results/water_2024_schedule21/逐日区域账本.csv",
+      "bytes": 22018,
+      "sha256": "5a706ebbc738e5cafa99a51a7fdc2170c61d6705a82ec682bd29b9f53028e787"
+    },
+    {
+      "path": "results/水位规则迁移过程对照.png",
+      "bytes": 315093,
+      "sha256": "87b3c15dacf098139a4009da1e0ccecf1701e4ae140baa1a7db77aac4e0c756a"
+    }
+  ]
+}

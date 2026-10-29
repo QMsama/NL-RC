@@ -1,0 +1,80 @@
+{
+  "id": "water_2024_point24",
+  "year": 2024,
+  "start": "2024-06-01",
+  "days": 115,
+  "arguments": [
+    "--year",
+    "2024",
+    "--start",
+    "2024-06-01",
+    "--days",
+    "115",
+    "--c0",
+    "grid",
+    "--rm-no-drain",
+    "--rm-bund",
+    "120",
+    "--ditch-h0",
+    "800",
+    "--rcc-calendar",
+    "--rm-calendar",
+    "--rm-water-policy",
+    "point24"
+  ],
+  "reference_run": "run_20261028_194316_basal_2024_58_18_24_3a93f4",
+  "events": {
+    "RM": [
+      {
+        "date": "2024-06-01",
+        "response": "2024-06-02",
+        "stage": "basal",
+        "frac": 0.58
+      },
+      {
+        "date": "2024-06-18",
+        "response": "2024-06-19",
+        "stage": "tillering",
+        "frac": 0.18
+      },
+      {
+        "date": "2024-07-06",
+        "response": "2024-07-07",
+        "stage": "tillering",
+        "frac": 0.24
+      }
+    ],
+    "RCC": [
+      {
+        "date": "2024-06-01",
+        "response": "2024-06-02",
+        "stage": "basal",
+        "frac": 0.58
+      },
+      {
+        "date": "2024-06-18",
+        "response": "2024-06-19",
+        "stage": "tillering",
+        "frac": 0.18
+      },
+      {
+        "date": "2024-07-06",
+        "response": "2024-07-07",
+        "stage": "tillering",
+        "frac": 0.24
+      }
+    ]
+  },
+  "scenario": {
+    "nitrogen_basis": "Existing Nfer-2018 annual land-area proxy retained for paired trial",
+    "allocation": [
+      0.58,
+      0.18,
+      0.24
+    ],
+    "late_event_formula": "tillering retained from current_2024",
+    "response_lag_days": 1,
+    "water_management": "point24",
+    "interpretation": "RM point schedule and drainage rule transfer; RCC and nitrogen held fixed"
+  }
+}

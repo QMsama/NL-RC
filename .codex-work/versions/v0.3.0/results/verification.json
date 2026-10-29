@@ -1,0 +1,51 @@
+{
+  "baseline_rasters_identical": true,
+  "scenarios": {
+    "basal_2024_58_18_24": {
+      "rcc_identical": true,
+      "rm_tn_identical": true,
+      "zero_irrigation_after_cutoff": true,
+      "closure_max": {
+        "rm_closure_max_mm": 0.0,
+        "rcc_closure_max_mm": 0.0,
+        "ditch_closure_max_m3": 9.094947017729282e-13
+      },
+      "sum_load_difference_kg": -4.656612873077393e-10
+    },
+    "water_2024_schedule21": {
+      "rcc_identical": true,
+      "rm_tn_identical": true,
+      "zero_irrigation_after_cutoff": true,
+      "closure_max": {
+        "rm_closure_max_mm": 0.0,
+        "rcc_closure_max_mm": 0.0,
+        "ditch_closure_max_m3": 9.094947017729282e-13
+      },
+      "sum_load_difference_kg": 0.0
+    },
+    "water_2024_point21": {
+      "rcc_identical": true,
+      "rm_tn_identical": true,
+      "zero_irrigation_after_cutoff": true,
+      "closure_max": {
+        "rm_closure_max_mm": 0.0,
+        "rcc_closure_max_mm": 0.0,
+        "ditch_closure_max_m3": 9.094947017729282e-13
+      },
+      "sum_load_difference_kg": 4.656612873077393e-10
+    },
+    "water_2024_point24": {
+      "rcc_identical": true,
+      "rm_tn_identical": true,
+      "zero_irrigation_after_cutoff": true,
+      "closure_max": {
+        "rm_closure_max_mm": 0.0,
+        "rcc_closure_max_mm": 0.0,
+        "ditch_closure_max_m3": 9.094947017729282e-13
+      },
+      "sum_load_difference_kg": 0.0
+    }
+  },
+  "schedule_before_august_identical": true,
+  "passed": true
+}

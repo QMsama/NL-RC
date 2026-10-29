@@ -1,0 +1,1395 @@
+{
+  "config": {
+    "id": "water_2024_point21",
+    "year": 2024,
+    "start": "2024-06-01",
+    "days": 115,
+    "arguments": [
+      "--year",
+      "2024",
+      "--start",
+      "2024-06-01",
+      "--days",
+      "115",
+      "--c0",
+      "grid",
+      "--rm-no-drain",
+      "--rm-bund",
+      "120",
+      "--ditch-h0",
+      "800",
+      "--rcc-calendar",
+      "--rm-calendar",
+      "--rm-water-policy",
+      "point21"
+    ],
+    "reference_run": "run_20261028_194316_basal_2024_58_18_24_3a93f4",
+    "events": {
+      "RM": [
+        {
+          "date": "2024-06-01",
+          "response": "2024-06-02",
+          "stage": "basal",
+          "frac": 0.58
+        },
+        {
+          "date": "2024-06-18",
+          "response": "2024-06-19",
+          "stage": "tillering",
+          "frac": 0.18
+        },
+        {
+          "date": "2024-07-06",
+          "response": "2024-07-07",
+          "stage": "tillering",
+          "frac": 0.24
+        }
+      ],
+      "RCC": [
+        {
+          "date": "2024-06-01",
+          "response": "2024-06-02",
+          "stage": "basal",
+          "frac": 0.58
+        },
+        {
+          "date": "2024-06-18",
+          "response": "2024-06-19",
+          "stage": "tillering",
+          "frac": 0.18
+        },
+        {
+          "date": "2024-07-06",
+          "response": "2024-07-07",
+          "stage": "tillering",
+          "frac": 0.24
+        }
+      ]
+    },
+    "scenario": {
+      "nitrogen_basis": "Existing Nfer-2018 annual land-area proxy retained for paired trial",
+      "allocation": [
+        0.58,
+        0.18,
+        0.24
+      ],
+      "late_event_formula": "tillering retained from current_2024",
+      "response_lag_days": 1,
+      "water_management": "point21",
+      "interpretation": "RM point schedule and drainage rule transfer; RCC and nitrogen held fixed"
+    }
+  },
+  "config_sha256": "8eaab1c71ac1f61470902d486039c7b84a04c5b713d341803c06d7062183e7bb",
+  "input_signature": {
+    "dates": [
+      "2024-06-01",
+      "2024-06-02",
+      "2024-06-03",
+      "2024-06-04",
+      "2024-06-05",
+      "2024-06-06",
+      "2024-06-07",
+      "2024-06-08",
+      "2024-06-09",
+      "2024-06-10",
+      "2024-06-11",
+      "2024-06-12",
+      "2024-06-13",
+      "2024-06-14",
+      "2024-06-15",
+      "2024-06-16",
+      "2024-06-17",
+      "2024-06-18",
+      "2024-06-19",
+      "2024-06-20",
+      "2024-06-21",
+      "2024-06-22",
+      "2024-06-23",
+      "2024-06-24",
+      "2024-06-25",
+      "2024-06-26",
+      "2024-06-27",
+      "2024-06-28",
+      "2024-06-29",
+      "2024-06-30",
+      "2024-07-01",
+      "2024-07-02",
+      "2024-07-03",
+      "2024-07-04",
+      "2024-07-05",
+      "2024-07-06",
+      "2024-07-07",
+      "2024-07-08",
+      "2024-07-09",
+      "2024-07-10",
+      "2024-07-11",
+      "2024-07-12",
+      "2024-07-13",
+      "2024-07-14",
+      "2024-07-15",
+      "2024-07-16",
+      "2024-07-17",
+      "2024-07-18",
+      "2024-07-19",
+      "2024-07-20",
+      "2024-07-21",
+      "2024-07-22",
+      "2024-07-23",
+      "2024-07-24",
+      "2024-07-25",
+      "2024-07-26",
+      "2024-07-27",
+      "2024-07-28",
+      "2024-07-29",
+      "2024-07-30",
+      "2024-07-31",
+      "2024-08-01",
+      "2024-08-02",
+      "2024-08-03",
+      "2024-08-04",
+      "2024-08-05",
+      "2024-08-06",
+      "2024-08-07",
+      "2024-08-08",
+      "2024-08-09",
+      "2024-08-10",
+      "2024-08-11",
+      "2024-08-12",
+      "2024-08-13",
+      "2024-08-14",
+      "2024-08-15",
+      "2024-08-16",
+      "2024-08-17",
+      "2024-08-18",
+      "2024-08-19",
+      "2024-08-20",
+      "2024-08-21",
+      "2024-08-22",
+      "2024-08-23",
+      "2024-08-24",
+      "2024-08-25",
+      "2024-08-26",
+      "2024-08-27",
+      "2024-08-28",
+      "2024-08-29",
+      "2024-08-30",
+      "2024-08-31",
+      "2024-09-01",
+      "2024-09-02",
+      "2024-09-03",
+      "2024-09-04",
+      "2024-09-05",
+      "2024-09-06",
+      "2024-09-07",
+      "2024-09-08",
+      "2024-09-09",
+      "2024-09-10",
+      "2024-09-11",
+      "2024-09-12",
+      "2024-09-13",
+      "2024-09-14",
+      "2024-09-15",
+      "2024-09-16",
+      "2024-09-17",
+      "2024-09-18",
+      "2024-09-19",
+      "2024-09-20",
+      "2024-09-21",
+      "2024-09-22",
+      "2024-09-23"
+    ],
+    "inputs": [
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\nitrogen_fertilizer_use\\Nfer-2018.hdr",
+        "sha256": "3a726d688a5d062978308d0da8ff7c80b1f545a70ab437544eb39bb224ea512a",
+        "bytes": 1017
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rice_crayfish\\Rice_2021.tif",
+        "sha256": "6c23181b9901b17bccab98c9e654e0f3804969dd1e202dc2c3ce473dc43e916c",
+        "bytes": 177158
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\nitrogen_fertilizer_use\\Nfer-2018",
+        "sha256": "471f85f3d6ccb734040546ebb859ed0b0060d69dbb515e6d92b502369b3e132e",
+        "bytes": 3128576
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\soil\\Environmental Date_pH.tif",
+        "sha256": "5c0a292f4e7c97c04f7851f658e687abe6faf1033b7999836dfe64dff39e0c9d",
+        "bytes": 186333
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\soil\\Environmental Data_SOM.tif",
+        "sha256": "38c5c2aca270b2f28fc53efe278e99dd799e5ae579362fb1a4287accac8bedcb",
+        "bytes": 372218
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\面上推广\\核心计算代码\\inputs\\daily_full_precision.csv",
+        "sha256": "f66f24748599b0de82b5c88c7ee8ffe88b8102bcfcb893574d165db55ae3655e",
+        "bytes": 7318
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_153.tif",
+        "sha256": "d6d987e4768952a43a1e8fa5920d6abc6c4e598542747c1d3929c775f312e4d2",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024153.tif",
+        "sha256": "68bb42216a9400b4ae742225cc053f38eb24130ddf47d0d34c25156f61dba790",
+        "bytes": 92209
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_154.tif",
+        "sha256": "5f50f41f9d5b463cb65c97ed0d6e0e2d0cada2aaf8d7ff0343c57f3cf3ce194c",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024154.tif",
+        "sha256": "5cf2d46072598ddf7657659a856dc4e83fbbb52012b553bf66c7c6942049d209",
+        "bytes": 92713
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_155.tif",
+        "sha256": "47dea34335870991975973032fc97fd5bba4bfb069da14cf2d1f60189570b83e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024155.tif",
+        "sha256": "831d33cefd077de67c53e64e7cc229ce71b64e7cac25fe52f8f59c3577d89c3e",
+        "bytes": 95723
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_156.tif",
+        "sha256": "0ca6ef6947e9f7b1cd4e123e36849d8a39cac5e6459a99768b8afcdfa21ee0b0",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024156.tif",
+        "sha256": "f739925b1fc8e9eb6d03b33f97f0ac06013c70b111eb1ce1f1f2966480e06876",
+        "bytes": 92283
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_157.tif",
+        "sha256": "c80f766fb8e007f6608deccf4a93cb58e4e76035c326dc8acc702cd304b64eae",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024157.tif",
+        "sha256": "fe42afb33480ee596586792d75820eb650357949a0ce3db4f77d4519384aaf84",
+        "bytes": 93299
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_158.tif",
+        "sha256": "3dd8fe3b319f86e8a9aa9d2e0be6737900947bb0733819b036627bbce56a5f7d",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024158.tif",
+        "sha256": "d8627ff131600e9bae8b4e52cd8ddcf78e906f3509290a6e042d60d61e53df64",
+        "bytes": 95677
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_159.tif",
+        "sha256": "1d513da40e2ebf2d53d753c29b25df44a8a5b593f0ea0c1b8aa92c5a53f8f7d2",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024159.tif",
+        "sha256": "b46da42451a487ddab6b34b0a9259fedafe65a8756e0599d048dda964d5b9a6f",
+        "bytes": 95605
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_160.tif",
+        "sha256": "785c27e0b6ea5d39eb2d635ca4764c4797bc32b886825c5b5be737a12076e3bf",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024160.tif",
+        "sha256": "744f2de0fda8efdb97010528b21a76fd389f0c675f5fcbb2f7a3d8ddbae3e926",
+        "bytes": 92115
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_161.tif",
+        "sha256": "fac4984635f599591f198239ad42e57e4c59f4908fdfe28b7c5e76eb6b319835",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024161.tif",
+        "sha256": "c1016082ea21ed5b7dd1c1e9f8ffdefb93e5b4be1b3f20a82a5b54250db563bc",
+        "bytes": 91709
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_162.tif",
+        "sha256": "8488336fa11706aa1a45ef2949fa12874407ae2a025270df23600842d8c16226",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024162.tif",
+        "sha256": "feaf35fdb30eefea20a8334030d5a0ea00588bc36ffc558cb7db1cdb06155fba",
+        "bytes": 94905
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_163.tif",
+        "sha256": "00dcdc7dabcb086c6311b7c708d618e4576341df72cb8bdc721fbf2f74c5c14e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024163.tif",
+        "sha256": "40347ad0262bf100b96f44e6c5514128836ed648b7af8c58cb979242039d7962",
+        "bytes": 97323
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_164.tif",
+        "sha256": "6bcd28b5cdad8876ebb5288fec8bc1aa4691100e75ed1ff7c066696479fb4950",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024164.tif",
+        "sha256": "2f384e5d6938678ae5120ff15281794990bd5eb5cf136f9bbc51aa2d56a44be8",
+        "bytes": 98803
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_165.tif",
+        "sha256": "00691b52ef4d95cf07cdb0f180e0debe80cc3e89123b927baf07b73f66084793",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024165.tif",
+        "sha256": "d729e3250f59603c3013460808bcb4eb34e4e8d6733b238f99c19e0c97cd5c4e",
+        "bytes": 96891
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_166.tif",
+        "sha256": "bcb3727207f8d418a89c0b9f000c102fe1d84affb0e7b801beba09f5d0f88082",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024166.tif",
+        "sha256": "a8ce4810a7b0487fc5db2ed8b5e0ed8a20ef90b491a8961a3c563c4f53d27b37",
+        "bytes": 96991
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_167.tif",
+        "sha256": "ebf18ad5d3c6666ac8abd410a481ee60f5670cfe15a4ba78dd12265975c6aaac",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024167.tif",
+        "sha256": "2c50ca5e6b2a2f401f047e7a9a6c4cc30d63d303d7c166bda056420a9547baca",
+        "bytes": 97501
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_168.tif",
+        "sha256": "ca553efea8a84da4458564a9bf17dfe78000168697328b29283259762571d80d",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024168.tif",
+        "sha256": "48acd8bae65f89bb674653226d1e20112971f46c5004ed0cdb84d113716033cf",
+        "bytes": 96363
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_169.tif",
+        "sha256": "e3a78d0b5e1e120d488ce72bb1039d6da24fa3ba05ed282cd30faf8716325a5f",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024169.tif",
+        "sha256": "06bd2f845e54af8ec9e39651678f61e57e4b486a63994b2200ce4feb5ce2ebe8",
+        "bytes": 95115
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_170.tif",
+        "sha256": "bb488ca8e59a7af6625cb4555497ef586d49b58ded779fe9850f1b590fa6872f",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024170.tif",
+        "sha256": "9f403abbc7e60e649f6ffaa8e0a28d9a3fcf2a65c56b8d1daa0f5111a120699e",
+        "bytes": 94117
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_171.tif",
+        "sha256": "3b0b5c092f792f95673c18f6743b00f3a1991a0914cbd5c799f97699941dc2d5",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024171.tif",
+        "sha256": "3ec012ab66cbadfb1d146d7f3416bf0ada1d302e77b9af3a5387e590f0461b11",
+        "bytes": 94123
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_172.tif",
+        "sha256": "b6c4f2193bbd6960d3a7984456f92ba7d5a38e772f74ed180394a49305eb8d9e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024172.tif",
+        "sha256": "4ff27c68ff017955bfccdb52d8a64661a9046aa828989b1ca996d9ef43d92ab0",
+        "bytes": 92353
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_173.tif",
+        "sha256": "6d52b063943e612ae65d4112eb96095d998a3962c7606bc05e70f7c583f2bac6",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024173.tif",
+        "sha256": "b10275022c5a58b3dec9c32daf90d49a3156b039ffd812bac1b628638855b68e",
+        "bytes": 93119
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_174.tif",
+        "sha256": "6e648514a1cc67913986d073c896e07613860058a8679dcfda21604905f871f8",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024174.tif",
+        "sha256": "89f5ddb3394c960e919ce81ee44b9f0bf3ce0a69e66d5ad132d8eb849c43d012",
+        "bytes": 92445
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_175.tif",
+        "sha256": "6acb6968c01a0ab98fa31e111dbdd64203b18b99d1e7b388829560ec182e4c20",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024175.tif",
+        "sha256": "76698d30d757dbd0c07cbf521afbbcddb054d87837350270e27f7b5b5a520462",
+        "bytes": 97437
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_176.tif",
+        "sha256": "4e15576f8222d6f3a9c90e4ff0345f6c1cabe660b9175064680d1380939d887d",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024176.tif",
+        "sha256": "118529ad83791a85bed67b7c6bcc53fd79b7df9145fc068429abf2568a757466",
+        "bytes": 92957
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_177.tif",
+        "sha256": "e60e79159456395f2e6ec7bee73cbedc11a76d9411ecef2bf5494f3c2d3e0d71",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024177.tif",
+        "sha256": "5758b0b305005bb8cd7c07b16999d1a111740dccb1d71662627e96ada4412012",
+        "bytes": 96971
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_178.tif",
+        "sha256": "e348057a53cd28ccac63d4c9938ba6d93d664a7cd46104db7845437ff0580582",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024178.tif",
+        "sha256": "a0417aef78e958e93579fbe1fe93af85fa7aa22beacd3c38fae8d80aa0f290fa",
+        "bytes": 91983
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_179.tif",
+        "sha256": "e5139bcf2b29dcb9dc1a1fc6efc77e504e92fac7dbbf0f83be999e96fd16c79a",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024179.tif",
+        "sha256": "312d9ec69b25b2dd514a941233a6aae4f126a318acece20331eac689777dd6f7",
+        "bytes": 92919
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_180.tif",
+        "sha256": "67d20a57e2402508c7d962cda24b190c86eab171edc77ce1737658f47cd4ec8b",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024180.tif",
+        "sha256": "29bf9d0b4e81f6237317f3ac190c37eac57cd6895368dbf2629d7c7c218d842c",
+        "bytes": 89427
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_181.tif",
+        "sha256": "37c43c385cbcf73c3eb36e0a935e7a94e9f99edcd408f55eee750fcffb3e59bb",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024181.tif",
+        "sha256": "85b4fbd6927d321711a6bd10bc8164dedfcb947d33dbcb0abf7c0ed66e276213",
+        "bytes": 95367
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_182.tif",
+        "sha256": "fae01588b8095c5e3258c2ee078480a3896d1526fb56708b4ab86b187f44f83c",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024182.tif",
+        "sha256": "69f980d4fcf94464ed07d497f9742f85adef58877140a7e63fc60df593a82f29",
+        "bytes": 98067
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_183.tif",
+        "sha256": "5760e7da5abbe036ed7558bb7326e145148bc00349fc08ffc09bc2b6332e92bf",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024183.tif",
+        "sha256": "b226ffab951378a9f0c843a1902c47b3dc538f7e59ab42cd0db29f55d4c6022e",
+        "bytes": 91949
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_184.tif",
+        "sha256": "e2f9d720911d1158d2414746fb876c7f47dca996cfd56259ab6de48066d339e4",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024184.tif",
+        "sha256": "48764e19d9f0b01f4f218a60611b48d7108895600cfcc324f253dface525cd11",
+        "bytes": 99125
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_185.tif",
+        "sha256": "13b24692bfe2e0081f40023cf1b9854b7b42b0e07578f69517dbac47a04d1ade",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024185.tif",
+        "sha256": "6098deb2d3ee7c24377c79b44de0bb86fac607cbd696ed7d49f30df1af115f58",
+        "bytes": 91295
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_186.tif",
+        "sha256": "a76daf86ec865ee4d96c85f3911158c3208224d0ce9880a677339a36faa71eb5",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024186.tif",
+        "sha256": "2dc39beb71b74948d9657037d4fc43f6b357cf74386195484231bb3b1fc7534c",
+        "bytes": 93381
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_187.tif",
+        "sha256": "e9920ef01ce6a8cf129c4e9e8d9d6c5d08cbbf2d916642aa616da2344888b892",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024187.tif",
+        "sha256": "9ea94f260626f97b4d8a44a998c499cacdfea3c345d9c76af1af7fe79c4dd6e4",
+        "bytes": 96205
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_188.tif",
+        "sha256": "dca62a8a7c73a2cca2f1e09275825e8043596ce1bada4648f551fccc6d744a89",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024188.tif",
+        "sha256": "27bf90687b8e65c6dbc9310cb5296fbbee72a50a72a9d53064337700849f85c3",
+        "bytes": 96875
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_189.tif",
+        "sha256": "ea710e46cffd659a98a9fb1ae1638830881ac4027f454debffd2e390b3b842cd",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024189.tif",
+        "sha256": "e1f5cf031681b6b07a3a0ba09d90f7a3d5b6a73200c3dc0a65ac1e5c1b0bb427",
+        "bytes": 96537
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_190.tif",
+        "sha256": "8d23b36f32ecc77503b11058c261a1c40adeacea5108243c2eb1a7118b39a9c9",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024190.tif",
+        "sha256": "105f6c23c7d596e00ed2d7f3cd45612833e2045c5cf7691181b430f37125e965",
+        "bytes": 93943
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_191.tif",
+        "sha256": "95678a613e872fe05da287c4fe9993a29eaccd5a789eb52dc5c66b4a2cd24548",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024191.tif",
+        "sha256": "32ac8c1048f96b069d3d2b59f5da649a3a04e093a0660a50194530107373d3fc",
+        "bytes": 92379
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_192.tif",
+        "sha256": "a2bc847759047eaeb03611fdaca46eab589c050fc51b27a261d4d104b1383e15",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024192.tif",
+        "sha256": "38670e081f6f5befd6d3071121bf8af45d7c85e4a9d945026816915300af4dac",
+        "bytes": 93001
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_193.tif",
+        "sha256": "a32228f9b34549c276039dcacc8bdd3b5d796715c0bb18d2cfa573b72ff22007",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024193.tif",
+        "sha256": "1e3df9c871e876ac3fd43b1cad2ae0577d98fae4ccb7af4c49d42077d6b407c4",
+        "bytes": 91015
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_194.tif",
+        "sha256": "344e0e7ecb19f3ae6c574761ee08a8e04b84d5d6566840a846eefb869591c7cc",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024194.tif",
+        "sha256": "f024f0c4db3e270bce65f2e6d8e90e7682e2fcf9cc322b2e29280970e1f7e6a5",
+        "bytes": 93255
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_195.tif",
+        "sha256": "7a0a0bd400bfb36cdd6e695cc43640e29de23cb316b5d4560e30b8c96179e016",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024195.tif",
+        "sha256": "016d4c4c90ebd58a2f4c7d5ea144d87fe83cce6c195d60ed1aa718cb58ab62d0",
+        "bytes": 90325
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_196.tif",
+        "sha256": "73fc0cdac4eb13532c84a1a9531d6bf47ddd717f32f84712365cdf5478bcb2e6",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024196.tif",
+        "sha256": "46e77c5b00f02b490b43cc3d682948c9eea9698d1d7215b85e11b58cfe10bc81",
+        "bytes": 92075
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_197.tif",
+        "sha256": "aa6d82b1f0f3c6f57277e656f28bcd8b0fb36d7aaec45c15360a41ce8e3db06a",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024197.tif",
+        "sha256": "03ffceee78ee2be938c64263768fe685f0e565c907a6be3ff27f5f6352d877bb",
+        "bytes": 94799
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_198.tif",
+        "sha256": "f9bcf1378f4c1ff60146f5d842ae052564845b5f44816cefdef158781ec967c9",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024198.tif",
+        "sha256": "6fe85a46539035756a92ff1e671904ddde6bafcc5f2b8fc45d6e168c91460df4",
+        "bytes": 96525
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_199.tif",
+        "sha256": "ebd5c9264c8931af5b478009b060de5955fb5d931f72a8f52669ef97d013ac4e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024199.tif",
+        "sha256": "a3c11f8d4d7eb63993e8a64989b01cff6aae9581fdfb5e80f0b639042f451973",
+        "bytes": 96605
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_200.tif",
+        "sha256": "ff808e4e99b7361397bcde28a9c782c3e37946dc26ef863d882ef0559ccb2988",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024200.tif",
+        "sha256": "f0772af93153e0bc355b720ce53b522d94d685f0672582373c9f00e0a45fad1a",
+        "bytes": 96323
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_201.tif",
+        "sha256": "4783f947e82c4c1255c1dcf0b59ab13ba838d4e953a583da03e31050cde4fb05",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024201.tif",
+        "sha256": "a12da3216aab350cb8186c6279a361869cd780a747ce8b17dfb2cf32bb90e246",
+        "bytes": 96687
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_202.tif",
+        "sha256": "d0c9d750cc5716430fca1f4c711a8a9fb8cebe312e1902769c3c8b4ec9469635",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024202.tif",
+        "sha256": "6cb5a190f1a86c4d61ba959384aad7693efcb522015803d63557721b744f15d7",
+        "bytes": 98171
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_203.tif",
+        "sha256": "4b0fa8daf46141bcfdc367638beeafbb6861c5a5f441ea68e9252186a6e985fb",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024203.tif",
+        "sha256": "209e30f38ca7bcb0c903e76a8998db29c2b419b5f48d1b6662dfe20e3f28800e",
+        "bytes": 98335
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_204.tif",
+        "sha256": "1ea1cad380fc25aa66ab822a06678c86f419e6d74f7f2f5b350524958b29341f",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024204.tif",
+        "sha256": "03ffc6cad4b87c61692ef2a0f0c47b41f963ad7aaa74401bb911b38bc3faa25f",
+        "bytes": 99149
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_205.tif",
+        "sha256": "b50502e9b8ea080c41838b1d7730cb33b37f3975544658091452781aed77b74c",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024205.tif",
+        "sha256": "84755cd2b07ca87a0328be6342f58f26cba0dbd7b83a877e28b27570b3e4f1f2",
+        "bytes": 99127
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_206.tif",
+        "sha256": "7bb5fa87112b584ed0ff7fc5c743a0037c76e62275248098e763c6acf7643d86",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024206.tif",
+        "sha256": "20c657112612ad94809a5283c1daec29885b5284ed4cd2c928fd0a8044ee32f1",
+        "bytes": 98449
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_207.tif",
+        "sha256": "88d7bb590bad4041b6cf35f987184beca9518ac1f1b72fc5618081080e47a719",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024207.tif",
+        "sha256": "dc8cb9175cda849674cede3df50c6db25289601ac57e308c5fbbab43f3585533",
+        "bytes": 96083
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_208.tif",
+        "sha256": "6b6a72315cfd5a84732de0360bf0e74aeb3de90923ccb53ec4eeed8a8967b731",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024208.tif",
+        "sha256": "63fb20e6488354aa32e09f59ac77f1434cab116cd12fe30c319829577ec05b4b",
+        "bytes": 93489
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_209.tif",
+        "sha256": "5d713a2b54f256d70534c4c48117c4de84b52bfa1e8e2fa4d060b7a317d86ccf",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024209.tif",
+        "sha256": "d479ad71981e2460efe2f9fcd2cd0ea51a7d2a9ac0ab4b16071d971e62d71883",
+        "bytes": 96795
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_210.tif",
+        "sha256": "232132414921a5f872b0b6b5aaef41a35a46094fb420b577d5fd84170a193bf1",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024210.tif",
+        "sha256": "8aebc5210c52efa4b40132025c4d9ee373ff6140056bcc09552c3e731ecbd4e6",
+        "bytes": 89377
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_211.tif",
+        "sha256": "51ffcb4deb7d25f373d702107af0f1b24a2632faeed67286751a142d2606a15a",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024211.tif",
+        "sha256": "852dedb8debd56543f58a291aa40a54a3cc5f438c36efb6f403f9c0015234792",
+        "bytes": 97577
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_212.tif",
+        "sha256": "20beb690d7447561ee44b07f800589aa078b55a231e0aa53f1308989cd6d8dca",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024212.tif",
+        "sha256": "70a23f3f25efc2f1fe65f618db1c0587d0f1fa0f6537f21fc7418e1e4a63461d",
+        "bytes": 98649
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_213.tif",
+        "sha256": "a5638b0e910455b1c480b601df002abc061975b9da473f9a090702c3af4cd019",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024213.tif",
+        "sha256": "da73b0cca5453c435b3704b6ae56d8d167d7a55dafe8063dd714b61ae836bf32",
+        "bytes": 97515
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_214.tif",
+        "sha256": "b08feb416668f156e8bcfd93ab25ae619b2011962776f1d26901d89aecd7410e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024214.tif",
+        "sha256": "46cef7f4667f3df6ccf066b77865bb1a2f4901932107a6a74d48d00e22923f70",
+        "bytes": 95229
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_215.tif",
+        "sha256": "757a14b342ad5319cde5643686ee4c245e3c9641ffcb20a23b3ce7faa5004893",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024215.tif",
+        "sha256": "3621e47d158533e92d36a784fae2b63010d69115ea704dde13d81ece81f4b359",
+        "bytes": 95673
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_216.tif",
+        "sha256": "3434266e54013eea61082ca862986674ba09112bfc12718e4e10e4399ab3b3f2",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024216.tif",
+        "sha256": "b7cb3eeb56435d1cf95083708021a68dc7635c0b3a9ceb002b7b3a3f4b8fdd04",
+        "bytes": 98107
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_217.tif",
+        "sha256": "cbbaedf742d10a7e97e7ff0411e81b6defe63adaace4b46ef40bfdbf87da44eb",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024217.tif",
+        "sha256": "71c68dc1806187d3b6373a664fd2484635b832917b4a92b7d9f3e8f03cbc4773",
+        "bytes": 96707
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_218.tif",
+        "sha256": "ff7c55382599a94a153a6e54e2bff9e3b393cf2d2f13a7fdba5b75090af4a765",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024218.tif",
+        "sha256": "c1c140025abc3b620634698e6a92572c91313c8c0ebef85335d1383590fd77e0",
+        "bytes": 99315
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_219.tif",
+        "sha256": "01c6dbe34d05c4956ec64e87e8f90bc1aa446698b9f39db6bf0c7dbec2636c7e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024219.tif",
+        "sha256": "e2fe6d42931f7f2fd61137c0b02b197af3d97be2532d1f60cff29d539003dd45",
+        "bytes": 98565
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_220.tif",
+        "sha256": "5e62f40a4a30371c2eaac8b1b1a36e9ddefb98d02df15bcb822fb06be91252aa",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024220.tif",
+        "sha256": "957717bfe2b7607064d05798d6c4dd182d8caaa05e8a1f962120c19b69f9c03b",
+        "bytes": 98507
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_221.tif",
+        "sha256": "187c106d57645b4901a86dfccf371588b0db0abe13da17cfd5383fc969f847f0",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024221.tif",
+        "sha256": "55b3f18089682437ed89a8f19133df5bdc2556e272de242abfca8b2dcccfad92",
+        "bytes": 97907
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_222.tif",
+        "sha256": "59d7cfad0137c24a8ddaa5b15d7f04935499da7a4e321dfd2a654d61d445ce51",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024222.tif",
+        "sha256": "d818910a4597954879e8c681b687f4acf72eb1775df8e4284f78a07736867cc1",
+        "bytes": 97951
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_223.tif",
+        "sha256": "8772fc6133f7a42e4946ccb6d77ac45b5e23c53dc968d98e2257af1180010e6e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024223.tif",
+        "sha256": "9a3c13ac068608630595f9359113105a46ff3131f63a194a96c0cedf7c922fe8",
+        "bytes": 95169
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_224.tif",
+        "sha256": "6147903b709019083ca077dac1795f7776b4b6042880c51becd3dc684006899b",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024224.tif",
+        "sha256": "49468d7d7e60fa4fc12aeeb9ab3dd6ad02a47a7155991f080063b87ccca14a9d",
+        "bytes": 99459
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_225.tif",
+        "sha256": "1a18d9bbca015764c07dc84c74f56b33f8f4ff9c9bb7f39b060d692d1e5cdee2",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024225.tif",
+        "sha256": "ec18d2c0eb3c0b909f0583d9c753ae2e983c8ad40a792a467163e8204e415e71",
+        "bytes": 97731
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_226.tif",
+        "sha256": "93810109cb9368220685c3793eb14ac21d48fedd92974d674346d8aadb50bf77",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024226.tif",
+        "sha256": "0f9065fd75ec70510dbcb60775374a7320e17d13efa85caa4bae9cf19e6801e8",
+        "bytes": 94535
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_227.tif",
+        "sha256": "2b67919a683f2350dff4e764b9b752ec06e5ced24d2f8b5f18616b03004f3f7a",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024227.tif",
+        "sha256": "8372e3a4f9ca79cf59fa6de636dce38adafa80ef5f8bac9617c17aabf421ee27",
+        "bytes": 94259
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_228.tif",
+        "sha256": "99367ed44ecd3bf9e5a0d969bdf9317a8801a7035bdd7dcd17165f48637bdb84",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024228.tif",
+        "sha256": "44666d3b4376371f19b993f0c3ca152f35203514822482e8c75199c4151d0a10",
+        "bytes": 95123
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_229.tif",
+        "sha256": "7b7565f1f5a9a51df815e1b71ce756d39510d885823a526e5b2d7b8e28679491",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024229.tif",
+        "sha256": "bb1c7178e92bb06e43436b7560a9f93c13643dfb50dbdbf7c5dfedc93a546011",
+        "bytes": 95871
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_230.tif",
+        "sha256": "82c3ebcc0287ec195d46c2780ec21b8542032fee6a4ca373ed2b931b3a509f10",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024230.tif",
+        "sha256": "5d9173a495d1f432f6e9d56be0a59fd9525c8ecc0cf10ed93678e52dcce39607",
+        "bytes": 94435
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_231.tif",
+        "sha256": "e94a0e8648069dce84ea487aac7a2827bb82c93b6bf1e7a55b33c9dad29eea42",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024231.tif",
+        "sha256": "71e57a427c232b978c3c177c22dcbe9c9e35b6f3cccd179ad48a2c6353759108",
+        "bytes": 93579
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_232.tif",
+        "sha256": "5e864ab294ac0cb6efefc7c7e11e31fb51dfab5b4569af358c67d84436d7c04d",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024232.tif",
+        "sha256": "697b9e738e6926b9da063743051673bdeec97f3f87b35e0753ee2c971f187b00",
+        "bytes": 94763
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_233.tif",
+        "sha256": "76c9d42da2702fd82a3f708af60cb98c1cd5bc48faef3bc98f28bbead551e59e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024233.tif",
+        "sha256": "179c11b7c0e8c606cfb438f992b5724855edd2967d66543fd4144ff8a34f6bd4",
+        "bytes": 97349
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_234.tif",
+        "sha256": "a8868f0036ec6b5bf13647a98eb39c78e096efef80ac2e8314d2b168ac21ba11",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024234.tif",
+        "sha256": "d26e203575ecb65dc803756b3cd3db16878b6f6d8f730e13b2bce70c72c768a7",
+        "bytes": 96795
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_235.tif",
+        "sha256": "635a9950cb537218292d950c9e8db6664de37a360cb4653683588c4adf04b41d",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024235.tif",
+        "sha256": "97b26da469af85d27dd9cf8c84d7070702fdbe1995884aa92a689be1cdb2d491",
+        "bytes": 97411
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_236.tif",
+        "sha256": "5f69066910349895a223428cac6e3b89136d760ecee3bbfae4592ad5112e6935",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024236.tif",
+        "sha256": "9a6e20c10e4937d4ab7911fef927d096ad647ecda517a616e3d8f2d3b167f29d",
+        "bytes": 98111
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_237.tif",
+        "sha256": "a6447c57ad574ec12114583dc3306f05b0ee431fcbcd0cedcdcf87ae0ad73914",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024237.tif",
+        "sha256": "66035db72d5dda97fe70de1a8769c47132e774e676cf60d6842806326c813bed",
+        "bytes": 98361
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_238.tif",
+        "sha256": "28c42f37b141dcff9e4a3c37b3f0cc46f65cdc6ee7692533ef405fb8127a9c1a",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024238.tif",
+        "sha256": "ca93dd37f31c85444e2040c5e27371f88ecc9b72f6af2e71f418b2aeb37ea2e6",
+        "bytes": 97153
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_239.tif",
+        "sha256": "e160defc769743a9ced45f3b9340a09f99e5a88d0f8c6761b1aa53c6f1b45dcd",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024239.tif",
+        "sha256": "78f1adc6606dc38bde2cacf89e97521e281d4fef236029419101db1722c73487",
+        "bytes": 95619
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_240.tif",
+        "sha256": "10b253bada724991d3b255d93abd3a52e813b919c8de7814b14df000ae898fdc",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024240.tif",
+        "sha256": "94a8f763f769f203ad0f97bdce4766d14c44a679cb28c5d23515303ce0fb6da0",
+        "bytes": 94103
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_241.tif",
+        "sha256": "d17b78f86bbd6c81e513a55743aed54582f750b8a226a54e2cbe7a78072261a2",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024241.tif",
+        "sha256": "e8a147d5f0e49112de7d12703670ed3dfe4a8fa591c3c04ade3dd015a2f717ac",
+        "bytes": 96305
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_242.tif",
+        "sha256": "2021a712c82a2f39cb30bb0a73bcb453b261877e9ff24bf13487f3d47faa0dc6",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024242.tif",
+        "sha256": "f915f81ade1ef1afbf477c4a33db36dc1c55d21907b2d950b227d03615a2f0a0",
+        "bytes": 94101
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_243.tif",
+        "sha256": "088843cd1cd18c7997ac9fa975bf5ad6c694a20c86b2ca595861e6620b2a11c1",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024243.tif",
+        "sha256": "8762f34f058bed9a5b52dde9440635f731ca01c2f4169129c1b8b18349a413c2",
+        "bytes": 92845
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_244.tif",
+        "sha256": "dc079c3595a96d541208150b43e38744939005a8dd0952848431c44613f36f5f",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024244.tif",
+        "sha256": "67e05080656c3a34583c7160f02d79001562b5fb5529e7f7de04b61ffdec8b9b",
+        "bytes": 96955
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_245.tif",
+        "sha256": "c269b12a017e882d5b44bb30413eac6a8d00187897866287acff39b4663f47de",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024245.tif",
+        "sha256": "4972d87770192df4541b5da51c2be8ff2655f34cbd7206b1aa46db1344590a07",
+        "bytes": 98723
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_246.tif",
+        "sha256": "b3bc7792c46ff434c0d2b6e7027c6484578b0dc0e3d8151e0d84488155968ffc",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024246.tif",
+        "sha256": "523295c3f075fada64f8f3439545292ce51aa4073464b82d18dfc766f8d921c4",
+        "bytes": 95949
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_247.tif",
+        "sha256": "295a49ef8987e83139e202c702b34df39fbd8a67f9e7e476d8bacc929d04ae58",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024247.tif",
+        "sha256": "72ac8ee400fee435ca5e9bb1a49de52ee242c9c036d1805dc288fd6e2426b4ee",
+        "bytes": 97141
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_248.tif",
+        "sha256": "823d2b1eef496ea682d7ce2c4996d84344c91f8be59f0f03c28e7bf2b261b064",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024248.tif",
+        "sha256": "1e9a2493b0f36f4eb1da581aef4b52c0ecd30393dc4c6c7d1d49940ca0eeaf46",
+        "bytes": 98003
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_249.tif",
+        "sha256": "52fb771480e576d2d3ba0a9f63a02ce3764a7441981c57979a22720e9c00290a",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024249.tif",
+        "sha256": "ec976ce5503fb46252419c6e62ab581996aa92e9718e29bc34b1d55131c673b1",
+        "bytes": 98529
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_250.tif",
+        "sha256": "51801aafa97f38dc95d0ec0d69ac312cae46af560756da1aa8abfa3ed4b6e674",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024250.tif",
+        "sha256": "cf180248debb1da569d618d65a02d2ad0bf333a0ea5676ac4bcf6bf043d1fa61",
+        "bytes": 98701
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_251.tif",
+        "sha256": "648dd2ddfa0fd0c32c51d48348b581f2af51843fdebf9ba50ca80f51a3550b14",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024251.tif",
+        "sha256": "5948f00d050ac5781311dcdda43f8f8b45c368afd00c4481369fb528f8ec3550",
+        "bytes": 97251
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_252.tif",
+        "sha256": "903484a4da9b38b80b851b853b456f63adae0e3ed8e4ff919273bf8754d03d0f",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024252.tif",
+        "sha256": "a637951cbbba4b9f2b8f9479cf319fa3b5765106dd2c1d30f44a4d3ff0deb16b",
+        "bytes": 97987
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_253.tif",
+        "sha256": "8f1934a45584f9ea9c3ce3eb9b68db7b8a404df200756109a2bfe06cfa323eae",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024253.tif",
+        "sha256": "65aa5463405998006a81401a9d264eedc806360f978910ff1e7909c16464bd6e",
+        "bytes": 98397
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_254.tif",
+        "sha256": "e0f60f5e92f13f40d30ebd8bb3ee41f6ae8a1251a3615d2e26138d38c8ff7418",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024254.tif",
+        "sha256": "3a28734b8050307c7ddf9ccea064f4345f045790683e19f7e03280e838f68b93",
+        "bytes": 95559
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_255.tif",
+        "sha256": "2caebd44423fc42da318a6ac6e45466fd490454181a42e78f4f1b4f1c66cc25a",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024255.tif",
+        "sha256": "c31638c71162520ce504d1c39293f785af429616193965ff2faeba7987dc2149",
+        "bytes": 96309
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_256.tif",
+        "sha256": "ee1b23b1245205d246f7bc575c3ad59dfd4c888f9cc6a4707a9f64319db156c4",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024256.tif",
+        "sha256": "f5e25708311e91e8b748464e508fb0915e7ff18d85c9c6883556a0e8f42bff7a",
+        "bytes": 91515
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_257.tif",
+        "sha256": "3a2498d74ec1e7b2f8ed46a6e1e7a2f9fc3812f58934f8869c45d27e9b143f82",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024257.tif",
+        "sha256": "80a59c626cb626cef9ede8dc61fd90a13f9f1264331625610492d12af5221832",
+        "bytes": 89747
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_258.tif",
+        "sha256": "1ef5f181ce37e555e13959669791596c2efa246102de0386721ab1de7fd30062",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024258.tif",
+        "sha256": "f4e6fe2ca48085a0e000247c6de4fc42338faf737a60dde2aa11174c1351568c",
+        "bytes": 88791
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_259.tif",
+        "sha256": "97d2924cc9b39e9255d68722c0d8a7cc0bf35004258b77b4935d2b0342e0ea56",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024259.tif",
+        "sha256": "7f148c11f4e7edb28ef6a868e1826fd059bd6e6ee4e85cd4e375ba5475ac21ec",
+        "bytes": 90943
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_260.tif",
+        "sha256": "955401ad5bdf96ba6331fb60deebbb8bb0be6981d81b29e572671f4127c3dfcf",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024260.tif",
+        "sha256": "ac3f8487e04cfb2844c2a2240655a981e44b660294ec1b101b748f77e59dbaa1",
+        "bytes": 92955
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_261.tif",
+        "sha256": "9be9ec70c714b9d22aa8d3f7c2ce1c4fdbe693870c01073ffdb93c2c883f98ca",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024261.tif",
+        "sha256": "c61aaf9db2bbdcb3453eec2b29b3228ea16d9e7bfc78e11bfaf891b77d13d077",
+        "bytes": 95475
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_262.tif",
+        "sha256": "ce09527b16fa008f5bbaf229cb1d461337f7975a0b4359997895d9a19f2bdcc9",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024262.tif",
+        "sha256": "8e8d3f06eafe3d0e40259c67bafee31f12652fccd91556b27b56a6e10480bcb5",
+        "bytes": 93665
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_263.tif",
+        "sha256": "2891f13e23d8c6f2960ca10d1e28dadbd187295bd33dcc911ad61607f7f86de3",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024263.tif",
+        "sha256": "c3f27524811c07f39d121008f35cbe26e39c730e5382c4b3e1e7ecafb7587fda",
+        "bytes": 92191
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_264.tif",
+        "sha256": "971adc3076ebce391210ad1ec15b19be72caa934ed94240f0ebfc057b8a7f070",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024264.tif",
+        "sha256": "5cf62b93ef2a8bd519142785b7fc64fc96a2299103b0ddde920e4ab3ca1832eb",
+        "bytes": 92297
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_265.tif",
+        "sha256": "4294275d293317685f33ec40de8896d6179ea04722efc652a0420e950b02d13e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024265.tif",
+        "sha256": "0bb29767cb814892c74000a02571c99fb9b0bce1442bf9ddd208a37ed649ef88",
+        "bytes": 96597
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_266.tif",
+        "sha256": "94a8a3ab14a9f2f8ed8c2014bcf26fce7f048c5182180f1d7ca2becfa521214c",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024266.tif",
+        "sha256": "dcbf817e085dbc606b4bc205ac7d4a4a90e70ce2aa48ec10934afe8837959bf9",
+        "bytes": 97239
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\rain daily tiff\\2024\\PRE_2024_Day_267.tif",
+        "sha256": "8d17b212b9f99970d240ac0a5daa3cceeba7618fe29d3784a3c0e99a6b5ab02e",
+        "bytes": 1850354
+      },
+      {
+        "path": "${DATA_ROOT}\\模型\\2026.9.3\\模型背景数据\\蒸散发\\ET_2024_daily_tiff\\ET_2024267.tif",
+        "sha256": "a0d7c5e3210484f6ecd252495de0466d92875162126a6c644d17dd43bf4f8707",
+        "bytes": 97943
+      }
+    ],
+    "engine_sha256": "bae1ffe7d9fcb2363cf226338c9419a2e96c95d08bf78cc287984b4671cb8f4d",
+    "modules": {
+      "water_balance.py": "f37759c42c8baa8d91f35f2391a78877c18bd2d32f8b3ed986b12d063d2ef885",
+      "water_quality.py": "0d34c817342a93b0e22e9287e5fe605cee7ba05274fa1cbc76d19512ea1e9365"
+    }
+  },
+  "cache": "${DATA_ROOT}\\.codex-work\\four_core_runs\\regional\\cache\\2024_c249ece34d99c91a8a9e.npz",
+  "engine_sha256": "bae1ffe7d9fcb2363cf226338c9419a2e96c95d08bf78cc287984b4671cb8f4d",
+  "modules": {
+    "water_balance.py": "f37759c42c8baa8d91f35f2391a78877c18bd2d32f8b3ed986b12d063d2ef885",
+    "water_quality.py": "0d34c817342a93b0e22e9287e5fe605cee7ba05274fa1cbc76d19512ea1e9365"
+  }
+}
