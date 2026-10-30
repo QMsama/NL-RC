@@ -1,0 +1,125 @@
+{
+  "RM": {
+    "pixels": 125036,
+    "area_ha": 569456.7892727556,
+    "mean_kg_ha": 4.8857058935984305,
+    "median_kg_ha": 3.949462513711716,
+    "p5": 1.527438528474078,
+    "p95": 10.233251764142793,
+    "max_kg_ha": 16.75503488277531,
+    "total_kg": 2782198.391499542,
+    "total_t": 2782.198391499542,
+    "zero_frac": 0.0,
+    "mean_drain_mm": 387.8560016026608
+  },
+  "RCC": {
+    "pixels": 74353,
+    "area_ha": 338629.04005884065,
+    "mean_kg_ha": 5.457665513528832,
+    "median_kg_ha": 4.575388401137435,
+    "p5": 2.067053079203529,
+    "p95": 10.749394062479238,
+    "max_kg_ha": 14.097733774270178,
+    "total_kg": 1848124.0338085084,
+    "total_t": 1848.1240338085083,
+    "zero_frac": 0.0,
+    "mean_outlet_m3_per_pixel": 15761.138970864975,
+    "mean_outlet_mm": 346.0683601433281
+  },
+  "meta": {
+    "start": "2024-06-01",
+    "end": "2024-09-23",
+    "days": 115,
+    "c0": "grid",
+    "no_rain_drain": false,
+    "rm_no_drain": true,
+    "pixel_ha": 4.554342663494959,
+    "ditch_L_m": 4187.056964826011,
+    "V_init": 6141.106205626733,
+    "V_max": 7348.398023807699,
+    "feed_conc_mg_L": 0.5484230597496275,
+    "alpha": {
+      "RM": 0.17910631036786312,
+      "RCC": 0.18862475682454152
+    },
+    "k": {
+      "RM": 0.32084970234924104,
+      "RCC": 0.436
+    },
+    "background": 0.38139121394675596,
+    "arguments": {
+      "c0": "grid",
+      "no_rain_drain": false,
+      "rm_no_drain": true,
+      "tag": "water_2024_point24",
+      "limit": 0,
+      "rebuild_cache": false,
+      "ditch_h0": 800.0,
+      "ditch_cap": 0.0,
+      "ditch_manage": 0.0,
+      "rm_daily_cap": 0.0,
+      "rm_bund": 120.0,
+      "year": 2024,
+      "start": "2024-06-01",
+      "days": 115,
+      "rcc_events": "",
+      "rcc_calendar": true,
+      "rm_calendar": true,
+      "rm_water_policy": "point24",
+      "event_config": "${DATA_ROOT}\\.codex-work\\nl_rc_2024\\upload_original\\configs\\water_2024_point24.json",
+      "cache_file": "${DATA_ROOT}\\.codex-work\\four_core_runs\\regional\\cache\\2024_c249ece34d99c91a8a9e.npz"
+    },
+    "events": {
+      "RM": [
+        {
+          "date": "2024-06-01",
+          "response": "2024-06-02",
+          "stage": "basal",
+          "frac": 0.58
+        },
+        {
+          "date": "2024-06-18",
+          "response": "2024-06-19",
+          "stage": "tillering",
+          "frac": 0.18
+        },
+        {
+          "date": "2024-07-06",
+          "response": "2024-07-07",
+          "stage": "tillering",
+          "frac": 0.24
+        }
+      ],
+      "RCC": [
+        {
+          "date": "2024-06-01",
+          "response": "2024-06-02",
+          "stage": "basal",
+          "frac": 0.58
+        },
+        {
+          "date": "2024-06-18",
+          "response": "2024-06-19",
+          "stage": "tillering",
+          "frac": 0.18
+        },
+        {
+          "date": "2024-07-06",
+          "response": "2024-07-07",
+          "stage": "tillering",
+          "frac": 0.24
+        }
+      ]
+    }
+  },
+  "point_pixel": {
+    "row": 434,
+    "col": 572,
+    "class_": 3,
+    "load_rm_kg_ha": 0.0,
+    "load_rcc_kg_ha": 2.1847435498713406,
+    "N_kg_ha": 221.04470825195312,
+    "pH": 7.800000190734863,
+    "SOM": 1.9028445482254028
+  }
+}

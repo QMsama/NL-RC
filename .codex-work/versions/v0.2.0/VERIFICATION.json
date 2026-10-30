@@ -1,0 +1,47 @@
+{
+  "baseline_rasters": {
+    "TN_Drain_RCC_2024_current_2024.tif": true,
+    "TN_Drain_RM_2024_current_2024.tif": true,
+    "TN_Load_RCC_2024_current_2024.tif": true,
+    "TN_Load_RM_2024_current_2024.tif": true,
+    "TN_TotalMass_RCC_2024_current_2024.tif": true,
+    "TN_TotalMass_RM_2024_current_2024.tif": true
+  },
+  "baseline_ledger_original_columns_identical": true,
+  "days": 115,
+  "calendar_dates_identical": true,
+  "water_outputs_identical": true,
+  "closure_max": {
+    "rm_closure_max_mm": 0.0,
+    "rcc_closure_max_mm": 0.0,
+    "ditch_closure_max_m3": 9.094947017729282e-13
+  },
+  "total_reconciliation": {
+    "RM": -4.656612873077393e-10,
+    "RCC": -2.3283064365386963e-10
+  },
+  "allocation_sum": {
+    "RM": 1.0,
+    "RCC": 1.0
+  },
+  "raster_audit": {
+    "RM": {
+      "pixels": 125036,
+      "expected_pixels": 125036,
+      "finite_nonnegative": true,
+      "area_ha_difference": 0.0,
+      "mass_float32_relative_difference": 6.59691975179717e-11,
+      "load_to_mass_max_kg": 4.605041468153104e-06
+    },
+    "RCC": {
+      "pixels": 74353,
+      "expected_pixels": 74353,
+      "finite_nonnegative": true,
+      "area_ha_difference": 0.0,
+      "mass_float32_relative_difference": -6.091161478529211e-11,
+      "load_to_mass_max_kg": 4.076577987177643e-06
+    }
+  },
+  "phase_totals_match": true,
+  "passed": true
+}

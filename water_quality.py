@@ -66,3 +66,33 @@ def point_concentration(treatment, day, events, parameters):
 
 def outlet_load_kg(outlet_m3, concentration_mg_L):
     return outlet_m3*concentration_mg_L*.001
+
+
+def validate_regional_events(config, start, end):
+    """Validate an explicit per-treatment seasonal nitrogen allocation."""
+    if not isinstance(config, dict) or set(config) != {'RM', 'RCC'}:
+        raise ValueError('Events must define exactly RM and RCC')
+    result = {}
+    for treatment, rows in config.items():
+        if not isinstance(rows, list) or not rows:
+            raise ValueError('Each treatment requires fertilizer events')
+        parsed = []
+        for row in rows:
+            try:
+                day = date.fromisoformat(row['date'])
+                response = date.fromisoformat(row['response'])
+                fraction = float(row['frac'])
+                stage = row['stage']
+            except (KeyError, TypeError, ValueError) as exc:
+                raise ValueError('Invalid fertilizer event') from exc
+            if not start <= day <= response <= end:
+                raise ValueError('Event and response must lie within season in order')
+            if stage not in COEF or not math.isfinite(fraction) or fraction < 0:
+                raise ValueError('Invalid stage or nitrogen fraction')
+            if parsed and (day <= parsed[-1]['date'] or response <= parsed[-1]['response']):
+                raise ValueError('Event and response dates must be strictly increasing')
+            parsed.append(dict(date=day, response=response, stage=stage, frac=fraction))
+        if not math.isclose(sum(e['frac'] for e in parsed), 1.0, rel_tol=0, abs_tol=1e-12):
+            raise ValueError('Seasonal nitrogen fractions must sum to one')
+        result[treatment] = parsed
+    return result

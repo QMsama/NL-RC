@@ -15,9 +15,9 @@ import uuid
 from datetime import date, timedelta
 from pathlib import Path
 
-from water_balance import vol_per_m, manage, regional_ditch_step
+from water_balance import vol_per_m, manage, regional_ditch_step, rm_transfer_thresholds
 from water_quality import (ALPHA, KDECAY, BACKGROUND, FEED_CONC,
-                           c0_from_grid, regional_concentration)
+                           c0_from_grid, regional_concentration, validate_regional_events)
 from osgeo import gdal, osr
 import numpy as np
 
@@ -134,7 +134,35 @@ def build_cache(mask_ds, mask, valid_idx, days, cache_path: Path):
     return rain, et
 
 
-def calculate(argv=None):
+def ditch_closure_residual(previous, rain, loss, field_drain, water, outlet):
+    """Audit stored water using the engine's float32 input operation order."""
+    depth = (-DITCH_B + np.sqrt(DITCH_B**2 + 4*DITCH_A*previous/DITCH_L))/(2*DITCH_A)
+    wet_area = DITCH_L*(DITCH_B + 2*DITCH_A*depth)
+    inflow = field_drain/1000.0*(RCC_PADDY_FRAC*A_TOTAL)
+    available = previous + rain/1000.0*(RCC_DITCH_FRAC*A_TOTAL) + inflow
+    actual_loss = np.minimum(loss/1000.0*wet_area, np.maximum(available, 0.0))
+    return available - actual_loss - outlet - water
+
+
+def check_expected(actual, expected):
+    """An absent reference denotes a trial; a supplied reference must be complete."""
+    if expected is None:
+        return {}, None
+    required = {'mean_kg_ha', 'total_t'}
+    if not isinstance(expected, dict) or set(expected) != {'RM', 'RCC'}:
+        raise ValueError('Expected summary must cover RM and RCC')
+    for treatment, values in expected.items():
+        if not isinstance(values, dict) or not required.issubset(values):
+            raise ValueError('Expected summary requires mean_kg_ha and total_t')
+        if any(not math.isfinite(float(v)) for v in values.values()):
+            raise ValueError('Expected values must be finite')
+    checks = {t: {k: {'expected':v, 'actual':actual[t][k],
+                      'difference':actual[t][k]-v} for k,v in expected[t].items()}
+              for t in ('RM','RCC')}
+    return checks, all(abs(x['difference']) < 1e-6 for rows in checks.values() for x in rows.values())
+
+
+def calculate(argv=None, daily_load_observer=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--c0", choices=["grid", "fixed"], default="grid")
     ap.add_argument("--no-rain-drain", action="store_true", help="两个处理都关闭无雨日退水")
@@ -153,6 +181,8 @@ def calculate(argv=None):
     ap.add_argument("--rcc-events", default="", help="RCC 施肥日，逗号分隔")
     ap.add_argument("--rcc-calendar", action="store_true", help="按图 2-4：RCC 晒田 7/3-7/4，7/5-7/14 用 10/30/100")
     ap.add_argument("--rm-calendar", action="store_true", help="按图 2-4：RM 晒田 7/3-7/4，6/29-7/2 用 30/50/100")
+    ap.add_argument("--rm-water-policy", choices=["baseline", "schedule21", "point21", "point24"], default="baseline")
+    ap.add_argument("--event-config", help="Preset JSON containing explicit RM/RCC events")
     ap.add_argument("--cache-file", required=True)
     args = ap.parse_args(argv)
     global V_INIT, DAYS, YEAR, START, END
@@ -168,6 +198,11 @@ def calculate(argv=None):
     START = date.fromisoformat(args.start)
     END = START + timedelta(days=args.days - 1)
     DAYS = [START + timedelta(days=i) for i in range(args.days)]
+    if args.event_config:
+        if args.rcc_events:
+            raise ValueError('Explicit events and --rcc-events cannot be combined')
+        event_config = json.loads(Path(args.event_config).read_text(encoding='utf-8'))
+        EVENTS = validate_regional_events(event_config['events'], START, END)
     V_INIT = DITCH_L * vol_per_m(args.ditch_h0)
     if args.ditch_cap > 0:
         global V_MAX
@@ -259,13 +294,23 @@ def calculate(argv=None):
         P = rain[i]
         E = et[i]
         loss = E + INFIL_MM
+        previous_rm, previous_rcc, previous_ditch = h_rm.copy(), h_rcc.copy(), v_d.copy()
         # --- RM ---
         lo, tg, cap, dry = thresholds[("RM", d.month, d.day)]
         w = np.maximum(0.0, h_rm + P - loss)
+        if args.rm_water_policy != 'baseline':
+            last_day = 24 if args.rm_water_policy == 'point24' else 21
+            lo, tg, cap, dry = rm_transfer_thresholds(d, (lo, tg, cap, dry), last_day)
         rm_cap = max(cap, args.rm_bund) if args.rm_bund > 0 else cap
-        if (args.no_rain_drain or args.rm_no_drain) and (not dry) and tg > 0:
+        if args.rm_water_policy != 'baseline' and (8, 1) <= (d.month, d.day) <= (8, 10):
+            rm_cap = cap
+        if args.rm_water_policy.startswith('point'):
+            rm_cap = cap
+            w, dr, irr = manage(w, P, lo, tg, cap, dry)
+        elif (args.no_rain_drain or args.rm_no_drain) and (not dry) and tg > 0:
             # 对照：无雨日不主动退水，只在雨日超上限时排水
             low = w < lo
+            irr = np.where(low, tg - w, 0.0)
             w = np.where(low, tg, w)
             capm = (P > 0) & (w > rm_cap)
             dr = np.where(capm, w - rm_cap, 0.0)
@@ -273,6 +318,7 @@ def calculate(argv=None):
             irr = np.where(low, tg - (np.maximum(0.0, h_rm + P - loss)), 0.0)
         elif args.rm_bund > 0 and (not dry) and tg > 0:
             low = w < lo
+            irr = np.where(low, tg - w, 0.0)
             w = np.where(low, tg, w)
             capm = (P > 0) & (w > rm_cap)
             dr = np.where(capm, w - rm_cap, 0.0)
@@ -287,12 +333,20 @@ def calculate(argv=None):
         rm_inc = 0.01 * dr * conc("RM", d)
         load_rm += rm_inc
         rm_drain_day = (dr / 1000.0 * A_TOTAL).sum()
+        rm_drain_mm = dr.copy()
+        rm_irrigation_mean = float(irr[is_rm].mean())
+        rm_irrigation_max = float(irr[is_rm].max())
+        rm_closure = previous_rm + P + irr - np.minimum(previous_rm + P, loss) - dr - h_rm
 
+        lo_rm, tg_rm = lo, tg
+        cap_rm = cap if dry or tg == 0 else rm_cap
+        dry_rm = dry
         # --- RCC 田面 ---
         lo, tg, cap, dry = thresholds[("RCC", d.month, d.day)]
         w = np.maximum(0.0, h_rcc + P - loss)
         if args.no_rain_drain and (not dry) and tg > 0:
             low = w < lo
+            irr = np.where(low, tg - w, 0.0)
             w = np.where(low, tg, w)
             capm = (P > 0) & (w > cap)
             dr = np.where(capm, w - cap, 0.0)
@@ -302,18 +356,38 @@ def calculate(argv=None):
         h_rcc = np.where(is_rcc, w, h_rcc)
         dr = np.where(is_rcc, dr, 0.0)
 
+        rcc_closure = previous_rcc + P + irr - np.minimum(previous_rcc + P, loss) - dr - h_rcc
         # --- 沟渠 ---
         v_d, outlet = regional_ditch_step(
             v_d, P, loss, dr, is_rcc, DITCH_L, A_TOTAL, V_MAX, args.ditch_manage)
+        ditch_closure = ditch_closure_residual(previous_ditch, P, loss, dr, v_d, outlet)
         outlet_rcc_tot += outlet
         rcc_inc = 10.0 * outlet * conc("RCC", d) / A_TOTAL
         load_rcc += rcc_inc
+        if daily_load_observer is not None:
+            # Observers receive copies so exported aggregates cannot alter the simulation.
+            daily_load_observer(d, rm_inc.copy(), rcc_inc.copy())
         ledger.append(dict(
             date=d.isoformat(),
             rm_drain_m3=float(rm_drain_day),
             rm_load_kg=float((rm_inc * PIXEL_HA).sum()),
             rcc_out_m3=float(outlet.sum()),
             rcc_load_kg=float((rcc_inc * PIXEL_HA).sum()),
+            rm_water_mean_mm=float(h_rm[is_rm].mean()),
+            rm_irrigation_mean_mm=rm_irrigation_mean,
+            rm_irrigation_max_mm=rm_irrigation_max,
+            rm_lower_mm=lo_rm,
+            rm_target_mm=tg_rm,
+            rm_capacity_mm=cap_rm,
+            rm_drying=int(dry_rm),
+            rcc_water_mean_mm=float(h_rcc[is_rcc].mean()),
+            rm_tn_mean_mg_L=float(conc('RM', d)[is_rm].mean()),
+            rcc_tn_mean_mg_L=float(conc('RCC', d)[is_rcc].mean()),
+            rm_drain_mean_mm=float(rm_drain_mm[is_rm].mean()),
+            rcc_outlet_mean_mm=float((outlet[is_rcc]/A_TOTAL*1000).mean()),
+            rm_closure_max_mm=float(np.max(np.abs(rm_closure[is_rm]))),
+            rcc_closure_max_mm=float(np.max(np.abs(rcc_closure[is_rcc]))),
+            ditch_closure_max_m3=float(np.max(np.abs(ditch_closure[is_rcc]))),
         ))
 
         if i % 15 == 0:
@@ -445,7 +519,7 @@ def project_root():
 
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
-def run(preset='paper_2022',root=None):
+def run(preset='paper_2022',root=None,daily_load_observer=None):
     from osgeo import gdal
     import numpy as np
     root=Path(root) if root else project_root()
@@ -461,7 +535,10 @@ def run(preset='paper_2022',root=None):
         raise ValueError('本入口按完整区域复现；局部运行需独立定义土壤缺失值填补域。')
     base=root/'模型/2026.9.3/模型背景数据'
     workspace=root/'.codex-work/four_core_runs/regional';workspace.mkdir(parents=True,exist_ok=True)
-    inputs=[base/'nitrogen_fertilizer_use/Nfer-2018.hdr',base/'rice_crayfish/Rice_2021.tif',base/'nitrogen_fertilizer_use/Nfer-2018',base/'soil/Environmental Date_pH.tif',base/'soil/Environmental Data_SOM.tif',PACKAGE/'inputs/daily_full_precision.csv']
+    management = PACKAGE/'inputs/daily_full_precision.csv'
+    if not management.is_file():
+        management = root/'模型/2026.9.3/面上推广/核心计算代码/inputs/daily_full_precision.csv'
+    inputs=[base/'nitrogen_fertilizer_use/Nfer-2018.hdr',base/'rice_crayfish/Rice_2021.tif',base/'nitrogen_fertilizer_use/Nfer-2018',base/'soil/Environmental Date_pH.tif',base/'soil/Environmental Data_SOM.tif',management]
     start=date.fromisoformat(config['start']);dates=[start+timedelta(days=i) for i in range(config['days'])]
     for d in dates:
         doy=d.timetuple().tm_yday;y=d.year
@@ -483,9 +560,12 @@ def run(preset='paper_2022',root=None):
     module_name='regional_model_'+uuid.uuid4().hex
     spec=importlib.util.spec_from_file_location(module_name,PACKAGE/'regional_model.py')
     model=importlib.util.module_from_spec(spec);spec.loader.exec_module(model)
-    model.ROOT=root;model.BASE=base;model.POINTRUN=PACKAGE/'inputs';model.HERE=workspace
+    model.ROOT=root;model.BASE=base;model.POINTRUN=management.parent;model.HERE=workspace
     args=config['arguments']+['--tag',config['id'],'--cache-file',str(cache)]
-    output=model.calculate(args)
+    if 'events' in config:
+        validate_regional_events(config['events'], dates[0], dates[-1])
+        args += ['--event-config', str(config_path)]
+    output=model.calculate(args,daily_load_observer=daily_load_observer)
     # 日期分组只用于重现既有统计口径，不代表逐像元物候识别。
     with (output/'逐日区域账本.csv').open(encoding='utf-8-sig') as f:ledger=list(csv.DictReader(f))
     groups={k:{'RM_kg':0.,'RCC_kg':0.} for k in ['06月','07月01日至08月15日','08月16日以后']}
@@ -497,9 +577,8 @@ def run(preset='paper_2022',root=None):
         totals={t:sum(g[t+'_kg'] for g in groups.values()) for t in ['RM','RCC']}
         for k,g in groups.items():w.writerow([k,g['RM_kg']/1000,g['RCC_kg']/1000,100*g['RM_kg']/totals['RM'],100*g['RCC_kg']/totals['RCC']])
     actual=json.loads((output/'summary.json').read_text(encoding='utf-8'))
-    checks={t:{k:{'expected':v,'actual':actual[t][k],'difference':actual[t][k]-v} for k,v in config['expected'][t].items()} for t in ['RM','RCC']}
-    numeric_pass=all(abs(x['difference'])<1e-6 for t in checks.values() for x in t.values())
-    verification={'preset':preset,'reference_run':config['reference_run'],'summary_checks':checks,'summary_reproduced':numeric_pass,'interpretation':'复现一致性；不代表模型实测有效性。'}
+    checks, numeric_pass = check_expected(actual, config.get('expected'))
+    verification={'preset':preset,'reference_run':config.get('reference_run'),'summary_checks':checks,'summary_reproduced':numeric_pass,'interpretation':'复现一致性；不代表模型实测有效性。' if numeric_pass is not None else '施肥比例情景试算；与独立基线比较。'}
     (output/'复现核验.json').write_text(json.dumps(verification,ensure_ascii=False,indent=2),encoding='utf-8')
     (output/'运行清单.json').write_text(json.dumps({'config':config,'config_sha256':digest(config_path),'input_signature':signature,'cache':str(cache),'engine_sha256':digest(PACKAGE/'regional_model.py'),'modules':{n:digest(PACKAGE/n) for n in ['water_balance.py','water_quality.py']}},ensure_ascii=False,indent=2),encoding='utf-8')
     for p in [PACKAGE/n for n in ['regional_model.py','water_balance.py','water_quality.py']]+[config_path]:
