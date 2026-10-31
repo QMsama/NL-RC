@@ -1,0 +1,40 @@
+{
+  "inputs": [
+    {
+      "file": "TN_RM_00_season_0601_0923_kg_ha.tif",
+      "sha256": "28064f8f2ff1cb304d72c4f730da0f64b1ca601c0843b9851084e7f9a5fe9c13"
+    },
+    {
+      "file": "TN_RM_00_season_0601_0923_kg_pixel.tif",
+      "sha256": "8fd5ea4e1b040e1c005903f2f541277c8011472bd2ac28741a93e251e19e724c"
+    },
+    {
+      "file": "TN_RCC_00_season_0601_0923_kg_ha.tif",
+      "sha256": "18acd2cf1cb93c2b27450653f87f402c9f0bf00a2fd18eecb4593af22847b3d1"
+    },
+    {
+      "file": "TN_RCC_00_season_0601_0923_kg_pixel.tif",
+      "sha256": "8fcac5a1183bcf5aa1c516bddd03c5368b36b86e8dd36279693281d367fd021c"
+    }
+  ],
+  "checks": {
+    "RM": {
+      "valid_pixels_preserved": true,
+      "grid_crs_readback_pass": true,
+      "nonnegative_loads": true,
+      "class_partition_pass": true,
+      "class_mass_closure_kg": 0.0,
+      "output_sha256": "03a2c3e92b44ba09d70dd25cdd58c443985650d814e7db36163ccbd92e57132e"
+    },
+    "RCC": {
+      "valid_pixels_preserved": true,
+      "grid_crs_readback_pass": true,
+      "nonnegative_loads": true,
+      "class_partition_pass": true,
+      "class_mass_closure_kg": 0.0,
+      "output_sha256": "1208bddc6a45984b8ef787bc752cbc8374e69d9707f78502dde95a6a6d35664d"
+    }
+  },
+  "method": "constrained cubic B-spline least squares; slope roots 1 and 2; within-treatment normalization",
+  "passed": true
+}

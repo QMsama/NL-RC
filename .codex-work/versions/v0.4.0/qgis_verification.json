@@ -1,0 +1,12 @@
+{
+  "RM": {
+    "expression": "1 + (\"RM@1\" >= 4.893727779388428) + (\"RM@1\" >= 9.774025917053223)",
+    "valid_pixel_class_identical": true,
+    "nodata_preserved": true
+  },
+  "RCC": {
+    "expression": "1 + (\"RCC@1\" >= 5.467080116271973) + (\"RCC@1\" >= 10.915754318237305)",
+    "valid_pixel_class_identical": true,
+    "nodata_preserved": true
+  }
+}
